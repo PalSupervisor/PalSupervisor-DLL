@@ -1473,6 +1473,21 @@
 </ul>
 </details>
 <details class="info">
+<summary>POST /api/bosses/spawn &amp; POST /api/bosses/spawnw &amp; POST /api/bosses/kill</summary>
+<ul>
+<li><code>POST /api/bosses/spawn</code>: <code>{"template": "god_anubis", "player": "Smooth", "distance": 1000}</code> summons a full custom boss encounter in front of a player.</li>
+<li><code>POST /api/bosses/spawnw</code>: <code>{"template": "god_anubis", "x": 313.4, "y": -217.9, "z": -4.3}</code> summons a custom boss encounter at in-game map coordinates (auto-snaps to ground if <code>z</code> is omitted).</li>
+<li><code>POST /api/bosses/kill</code>: <code>{"player": "Smooth", "radius": 5000}</code> despawns active custom boss encounters and minions (optional player/radius filters).</li>
+</ul>
+</details>
+<details class="info">
+<summary>POST /api/custom/spawn &amp; POST /api/custom/spawnw</summary>
+<ul>
+<li><code>POST /api/custom/spawn</code>: <code>{"template": "god_anubis", "player": "Smooth", "distance": 500}</code> spawns a custom template wild Pal in front of a player.</li>
+<li><code>POST /api/custom/spawnw</code>: <code>{"template": "god_anubis", "x": 313.4, "y": -217.9}</code> spawns a custom template Pal at in-game map coordinates with floor auto-snapping.</li>
+</ul>
+</details>
+<details class="info">
 <summary>GET /api/raids &amp; POST /api/raids/trigger &amp; POST /api/raids/cancel</summary>
 <ul>
 <li><code>GET /api/raids</code>: Returns active base raid incidents and remaining timers.</li>
