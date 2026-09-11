@@ -1065,7 +1065,7 @@
 </details>
 <details class="info">
 <summary>GET /api/players/all &amp; GET /players/all</summary>
-<p><strong>Description:</strong> Comprehensive scan of both online players and saved offline players extracted from <code>UPalGroupManager</code>.<br />
+<p><strong>Description:</strong> Comprehensive scan of both online players and saved offline players extracted from server group and world save state.<br />
 <strong>Response <code>200 OK</code>:</strong>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">{</span>
 <a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span><span class="nt">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
@@ -1166,7 +1166,7 @@
 <h2 id="4-live-pal-mutator-stat-management">4. Live Pal Mutator &amp; Stat Management</h2>
 <details class="info">
 <summary>POST /api/player/:uid/pals/mutate &amp; POST /player/:uid/pals/mutate</summary>
-<p><strong>Description:</strong> Live in-memory mutation of party Pal parameters with instant client network sync (<code>OnRep_SaveParameter</code>).<br />
+<p><strong>Description:</strong> Live in-memory mutation of party Pal parameters with instant live client synchronization without requiring relogging.<br />
 <strong>Request Body:</strong>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="p">{</span>
 <a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">  </span><span class="nt">"slot"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
@@ -1195,7 +1195,7 @@
 </details>
 <details class="info">
 <summary>POST /api/player/:uid/resetstats &amp; POST /player/:uid/resetstats</summary>
-<p><strong>Description:</strong> Resets spent status points (<code>GotStatusPointList</code>), calculates total allocated points, and refunds them directly to <code>UnusedStatusPoint</code> with instant client UI sync.<br />
+<p><strong>Description:</strong> Resets spent status points, calculates total allocated points, and refunds them directly to the player's available unspent status points with instant client UI sync.<br />
 <strong>Response <code>200 OK</code>:</strong>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="p">{</span>
 <a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="w">  </span><span class="nt">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
@@ -1285,7 +1285,7 @@
 </details>
 <details class="info">
 <summary>POST /admin/alert &amp; POST /admin/alertall</summary>
-<p><strong>Description:</strong> Center-screen warning overlay (<code>WBP_Warning</code>) with customizable hex color.<br />
+<p><strong>Description:</strong> Center-screen warning overlay banner with customizable hex color.<br />
 === "Targeted Alert"
     <div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="p">{</span>
 <a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="w">  </span><span class="nt">"player"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PalTrainer"</span><span class="p">,</span>
@@ -1316,7 +1316,7 @@
 </details>
 <details class="info">
 <summary>POST /api/reward/item &amp; POST /v1/api/reward/item</summary>
-<p><strong>Description:</strong> Grants items and triggers the native animated acquisition card queue (<code>WBP_PalIngameMenuItem_GetGroup_C</code>) and HUD log. Supports internal IDs and display names.<br />
+<p><strong>Description:</strong> Grants items and triggers the native animated acquisition card queue and HUD notification log. Supports internal IDs and display names.<br />
 <strong>Request Body:</strong>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="p">{</span>
 <a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="w">  </span><span class="nt">"target"</span><span class="p">:</span><span class="w"> </span><span class="s2">"all"</span><span class="p">,</span>
@@ -1483,7 +1483,7 @@
 <details class="info">
 <summary>GET /api/world/environment &amp; POST /api/world/weather &amp; POST /api/world/time</summary>
 <ul>
-<li><code>GET /api/world/environment</code>: Current and upcoming weather presets from <code>BP_PPSkyCreatorWeatherPresetController_C</code>.</li>
+<li><code>GET /api/world/environment</code>: Current and upcoming atmospheric weather presets.</li>
 <li><code>POST /api/world/weather</code>: <code>{"preset": "Thunderstorm"}</code> changes the active weather preset.</li>
 <li><code>POST /api/world/time</code>: <code>{"hour": 12, "timescale": 1.0}</code> adjusts server time and time flow speed.</li>
 </ul>
@@ -1544,17 +1544,17 @@
 <details class="info">
 <summary>GET /api/v1/explore/search</summary>
 <p><strong>Query Parameter:</strong> <code>?query=PalCharacter</code><br />
-<strong>Description:</strong> Search loaded <code>UObject</code> instances across memory.</p>
+<strong>Description:</strong> Search loaded game objects and classes across server memory.</p>
 </details>
 <details class="info">
 <summary>GET /api/v1/explore/inspect</summary>
 <p><strong>Query Parameter:</strong> <code>?address=0x18F4A2B0</code><br />
-<strong>Description:</strong> Inspect properties, fields, and values of a specific <code>UObject</code>.</p>
+<strong>Description:</strong> Inspect properties, fields, and values of a specific game object.</p>
 </details>
 <details class="info">
 <summary>POST /api/v1/explore/invoke</summary>
 <p><strong>Request Body:</strong> <code>{"address": "0x18F4A2B0", "function": "ResetStatus", "params": {}}</code><br />
-<strong>Description:</strong> Dynamically invokes a <code>UFunction</code> on the target object via reflection.</p>
+<strong>Description:</strong> Dynamically invokes a callable function on the target object via reflection.</p>
 </details>
 <hr />
 <h2 id="14-universal-command-dispatcher-official-v1-api-compatibility">14. Universal Command Dispatcher &amp; Official v1 API Compatibility</h2>

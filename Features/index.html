@@ -491,10 +491,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-engine-detour-hooking-zero-overhead" class="md-nav__link">
+  <a href="#1-high-performance-native-architecture-zero-overhead" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Engine Detour Hooking &amp; Zero Overhead
+        1. High-Performance Native Architecture &amp; Zero Overhead
       
     </span>
   </a>
@@ -744,10 +744,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-engine-detour-hooking-zero-overhead" class="md-nav__link">
+  <a href="#1-high-performance-native-architecture-zero-overhead" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Engine Detour Hooking &amp; Zero Overhead
+        1. High-Performance Native Architecture &amp; Zero Overhead
       
     </span>
   </a>
@@ -931,9 +931,9 @@
 <h1 id="features-architecture">Features &amp; Architecture</h1>
 <p>PalSupervisor operates as an in-process native supervisor and telemetry engine injected directly into <code>PalServer-Win64-Shipping-Cmd.exe</code> via Windows DLL proxy (<code>version.dll</code>).</p>
 <hr />
-<h2 id="1-engine-detour-hooking-zero-overhead">1. Engine Detour Hooking &amp; Zero Overhead</h2>
+<h2 id="1-high-performance-native-architecture-zero-overhead">1. High-Performance Native Architecture &amp; Zero Overhead</h2>
 <ul>
-<li><strong>Direct ProcessEvent Interception</strong>: Intercepts Unreal Engine RPCs and execution dispatches before game logic executes them, allowing instantaneous sanitization of malicious packets.</li>
+<li><strong>Native Event Interception</strong>: Intercepts network packets and execution dispatches before game logic executes them, allowing instantaneous sanitization of malicious packets.</li>
 <li><strong>No Client Mods Required</strong>: Works with 100% standard, unmodded vanilla Palworld game clients.</li>
 <li><strong>Microsecond Latency</strong>: Pure native C++ execution with average detour overhead under 0.02ms.</li>
 </ul>
@@ -942,14 +942,14 @@
 <ul>
 <li><strong>Movement Heuristics</strong>: Multi-tick velocity and delta-position validation detects speed hacks, noclip, illegal flight, and unauthorized teleportation.</li>
 <li><strong>Stat &amp; Stamina Sanitization</strong>: Prevents infinite stamina exploits, out-of-bounds player HP, and impossible stat point distribution.</li>
-<li><strong>Dev &amp; Debug RPC Interception</strong>: Blocks client invocation of developer functions (<code>Debug_InvaderMarch</code>, cheat RPCs) and enforces automatic bans.</li>
+<li><strong>Exploit &amp; Debug Interception</strong>: Blocks unauthorized client invocation of restricted commands and debug functions, enforcing automatic bans.</li>
 <li><strong>RPC Flood Rate-Limiter</strong>: Throttles network spam and denial-of-service attempts against the server thread.</li>
 <li><strong>Violation Audit</strong>: Full telemetry recording accessible via <code>/violations</code> and <code>GET /violations</code>.</li>
 </ul>
 <hr />
 <h2 id="3-deep-player-telemetry-inspection-online-offline">3. Deep Player Telemetry &amp; Inspection (Online &amp; Offline)</h2>
 <ul>
-<li><strong>Online &amp; Offline Inspection</strong>: Scans memory containers and directly accesses player data even when users are disconnected using <code>UPalGroupManager</code> and save file GUIDs.</li>
+<li><strong>Online &amp; Offline Inspection</strong>: Scans memory containers and directly accesses player data even when users are disconnected using save file GUIDs and world state.</li>
 <li><strong>Party Pal Deep-Scan</strong>: Species, level, rank, HP, talent IVs (0-100), active/passive skills, and illegal stat detection.</li>
 <li><strong>Inventory &amp; Durability</strong>: Real-time inspection of bag slots, weapons, armor, and equipment with live durability tracking.</li>
 <li><strong>Location Breadcrumbs</strong>: Logs recent 30-point coordinate history to inspect player pathing.</li>
@@ -957,11 +957,11 @@
 <hr />
 <h2 id="4-live-pal-mutator-player-stat-resetter">4. Live Pal Mutator &amp; Player Stat Resetter</h2>
 <ul>
-<li><strong>Zero-Downtime Party Pal Mutator</strong>: In-memory editing of party Pals via <code>UPalOtomoHolderComponentBase</code> and <code>FPalIndividualCharacterSaveParameter</code>.</li>
+<li><strong>Zero-Downtime Party Pal Mutator</strong>: In-memory editing of active party Pals with full parameter customization.</li>
 <li>Instantly mutate Level (1-60), Rank (1-5), Gender, Nickname, Passives, and IVs (<code>Talent_HP</code>, <code>Talent_Melee</code>, <code>Talent_Shot</code>, <code>Talent_Defense</code>).</li>
-<li>Triggers immediate network replication to clients via <code>OnRep_SaveParameter</code> without relogging.</li>
+<li>Triggers immediate live client synchronization without requiring relogging.</li>
 <li><strong>Player Stat Resetter &amp; Refund</strong>:</li>
-<li>Scans <code>GotStatusPointList</code>, calculates all allocated points, refunds them directly into <code>UnusedStatusPoint</code>, and syncs via client network RPCs.</li>
+<li>Scans allocated stat points, calculates all spent points, refunds them directly into available status points, and syncs via client network updates.</li>
 </ul>
 <hr />
 <h2 id="5-guilds-base-camp-administration">5. Guilds &amp; Base Camp Administration</h2>
@@ -975,7 +975,7 @@
 <hr />
 <h2 id="6-world-loot-map-entity-telemetry-1600-objects">6. World Loot &amp; Map Entity Telemetry (1,600+ Objects)</h2>
 <ul>
-<li><strong>Live Entity Scanning</strong>: Iterates <code>UPalMapObjectManager</code> across the entire world map with exact $(X, Y, Z)$ coordinates.</li>
+<li><strong>Live Entity Scanning</strong>: Iterates all interactive world map entities across the entire map with exact $(X, Y, Z)$ coordinates.</li>
 <li><strong>Tracked Entities</strong>:</li>
 <li>Wilderness treasure chests (Grades 1-5, unopened state, drop tables)</li>
 <li>Player death bags and corpses with instant remote item recovery</li>
@@ -986,21 +986,21 @@
 <hr />
 <h2 id="7-world-bosses-dungeons-instant-respawner">7. World Bosses, Dungeons &amp; Instant Respawner</h2>
 <ul>
-<li><strong>Complete Boss Enumeration</strong>: Scans 254 <code>APalNPCSpawnerBase</code> actors (FieldBosses, DungeonBosses, ImprisonmentBosses, TowerBosses).</li>
+<li><strong>Complete Boss Enumeration</strong>: Scans all 254 boss spawners across the map (Field Bosses, Dungeon Bosses, Imprisonment Bosses, Tower Bosses).</li>
 <li><strong>Live Status Tracking</strong>: Coordinates, active/spawned state, respawn cooldowns, and class names.</li>
-<li><strong>Instant Boss Respawner</strong>: Resets spawner cooldowns and triggers <code>SpawnRequest_ByOutside(true)</code> on-demand.</li>
+<li><strong>Instant Boss Respawner</strong>: Resets spawner cooldown timers and triggers immediate respawn on-demand.</li>
 </ul>
 <hr />
 <h2 id="8-base-camp-raid-incident-controller">8. Base Camp Raid &amp; Incident Controller</h2>
 <ul>
-<li><strong>Active Raid Telemetry</strong>: Queries <code>UPalInvaderManager</code> for ongoing enemy raids, wave counts, and remaining timers.</li>
+<li><strong>Active Raid Telemetry</strong>: Monitors ongoing enemy base raids, wave counts, and remaining timers in real time.</li>
 <li><strong>Manual Raid Spawner</strong>: Force-triggers enemy raid marches against any player base camp.</li>
 <li><strong>Instant Raid Cancellation</strong>: Disperses and cancels active enemy raids immediately with server broadcast.</li>
 </ul>
 <hr />
 <h2 id="9-dynamic-weather-world-environment">9. Dynamic Weather &amp; World Environment</h2>
 <ul>
-<li><strong>SkyCreator Atmospheric Control</strong>: Direct integration with <code>BP_PPSkyCreatorWeatherPresetController_C</code>.</li>
+<li><strong>SkyCreator Atmospheric Control</strong>: Full atmospheric sky and weather preset control.</li>
 <li><strong>Preset Switching</strong>: Switch between Clear, Rain, Thunderstorm, Foggy, and custom twilight presets on-demand.</li>
 <li><strong>Time Dilation</strong>: Set the in-game clock hour (0-24) and time dilation speed (<code>timescale</code>).</li>
 </ul>
@@ -1021,7 +1021,7 @@
 <h2 id="12-vanilla-client-compatible-modal-popups-visual-hud-rewards">12. Vanilla Client-Compatible Modal Popups &amp; Visual HUD Rewards</h2>
 <ul>
 <li><strong>Native Modal Dialogs</strong>: Displays centered modal popup dialogs with formatted text, emojis, and <code>[ OK ]</code> buttons on unmodded vanilla clients.</li>
-<li><strong>Animated Item Rewards</strong>: Triggers the client-side acquisition card queue (<code>WBP_PalIngameMenuItem_GetGroup_C</code>) and HUD notification log.</li>
+<li><strong>Animated Item Rewards</strong>: Triggers the client-side acquisition card queue and HUD notification log.</li>
 <li><strong>PalDex Banners</strong>: Displays capture celebration banners when rewarding Pals to players.</li>
 </ul>
 <hr />
@@ -1033,9 +1033,9 @@
 <hr />
 <h2 id="14-live-reflection-unreal-object-explorer">14. Live Reflection &amp; Unreal Object Explorer</h2>
 <ul>
-<li><strong>Runtime Object Search</strong>: Query and inspect <code>UObject</code> instances directly in server memory.</li>
+<li><strong>Runtime Object Search</strong>: Query and inspect game objects and classes directly in server memory.</li>
 <li><strong>Dynamic Property Inspection</strong>: View fields, addresses, and values in real time.</li>
-<li><strong>Remote UFunction Invocation</strong>: Safely call game functions dynamically without recompiling the server.</li>
+<li><strong>Remote Function Invocation</strong>: Safely invoke callable functions dynamically without recompiling the server.</li>
 </ul>
 <hr />
 <h2 id="15-embedded-rest-api-web-panel">15. Embedded REST API &amp; Web Panel</h2>
