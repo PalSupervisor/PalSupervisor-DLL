@@ -12,29 +12,29 @@
         <meta name="author" content="PalSupervisor">
       
       
-        <link rel="canonical" href="https://palsupervisor.github.io/PalSupervisor-DLL/">
+        <link rel="canonical" href="https://palsupervisor.github.io/PalSupervisor-DLL/RESTAPI/">
       
       
+        <link rel="prev" href="../Installation/">
       
-        <link rel="next" href="Commands/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>PalSupervisor Wiki</title>
+        <title>REST API - PalSupervisor Wiki</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,9 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#palsupervisor-wiki" class="md-skip">
+        <a href="#embedded-rest-api-reference" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="PalSupervisor Wiki" class="md-header__button md-logo" aria-label="PalSupervisor Wiki" data-md-component="logo">
+    <a href=".." title="PalSupervisor Wiki" class="md-header__button md-logo" aria-label="PalSupervisor Wiki" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              REST API
             
           </span>
         </div>
@@ -230,11 +230,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -253,7 +251,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="Commands/" class="md-tabs__link">
+      <a href="../Commands/" class="md-tabs__link">
         
   
   
@@ -272,7 +270,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="Features/" class="md-tabs__link">
+      <a href="../Features/" class="md-tabs__link">
         
   
   
@@ -291,7 +289,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="Installation/" class="md-tabs__link">
+      <a href="../Installation/" class="md-tabs__link">
         
   
   
@@ -308,9 +306,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="RESTAPI/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -345,7 +345,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="PalSupervisor Wiki" class="md-nav__button md-logo" aria-label="PalSupervisor Wiki" data-md-component="logo">
+    <a href=".." title="PalSupervisor Wiki" class="md-nav__button md-logo" aria-label="PalSupervisor Wiki" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -372,37 +372,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -418,48 +391,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#key-capabilities" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key Capabilities
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-links" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Quick Links
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -471,7 +402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Commands/" class="md-nav__link">
+      <a href="../Commands/" class="md-nav__link">
         
   
   
@@ -498,7 +429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Features/" class="md-nav__link">
+      <a href="../Features/" class="md-nav__link">
         
   
   
@@ -525,7 +456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Installation/" class="md-nav__link">
+      <a href="../Installation/" class="md-nav__link">
         
   
   
@@ -549,10 +480,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="RESTAPI/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -568,6 +526,37 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Request
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -599,21 +588,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key-capabilities" class="md-nav__link">
+  <a href="#example-request" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key Capabilities
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-links" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Quick Links
+        Example Request
       
     </span>
   </a>
@@ -640,30 +618,49 @@
   
 
 
-<h1 id="palsupervisor-wiki">PalSupervisor Wiki 🎮🛡️</h1>
-<blockquote>
-<p><strong>Enterprise Native Supervisor, Proactive Anti-Cheat &amp; Event Engine for Palworld Dedicated Servers</strong></p>
-</blockquote>
-<p>Welcome to the official documentation wiki for <strong>PalSupervisor-DLL</strong>. PalSupervisor is engineered in high-performance C++20 as a drop-in native extension (<code>version.dll</code>) integrating directly with the Unreal Engine 5.1.1 runtime.</p>
-<hr />
-<h3 id="key-capabilities">Key Capabilities</h3>
-<ul>
-<li><strong>⚡ Sub-Microsecond Memory Detours</strong>: Hooks directly into <code>UObject::ProcessEvent</code> and CDO functions with zero tick delay or TPS degradation.</li>
-<li><strong>🛡️ Proactive Anti-Cheat Matrix</strong>: Real-time detection of speed manipulation, infinite stamina, illegal damage spikes, and spoofed network packets.</li>
-<li><strong>💬 116+ Native In-Game Commands</strong>: Full moderation, inventory editing, instant teleportation, and player state manipulation.</li>
-<li><strong>👑 Dynamic Boss &amp; Raid Engine</strong>: Summon custom multi-tier boss encounters from JSON templates with minions, custom loot tables, and broadcast banners.</li>
-<li><strong>🧹 Autonomous Server Janitor</strong>: Scheduled sweeps to demolish abandoned wild structures and purge ground item clutter.</li>
-<li><strong>🌐 Embedded REST API</strong>: Built-in HTTP daemon on port <code>27020</code> for remote bot integration and web dashboard management.</li>
-</ul>
-<hr />
-<h3 id="quick-links">Quick Links</h3>
-<ul>
-<li><a href="Commands/">📖 In-Game Commands Guide</a></li>
-<li><a href="Features/">⚡ Features &amp; Architecture</a></li>
-<li><a href="Installation/">📦 4-Step Installation Guide</a></li>
-<li><a href="RESTAPI/">🌐 Embedded REST API Reference</a></li>
-<li><a href="https://github.com/PalSupervisor/PalSupervisor-DLL">GitHub Repository</a></li>
-</ul>
+<h1 id="embedded-rest-api-reference">Embedded REST API Reference</h1>
+<p>PalSupervisor embeds a lightweight non-blocking HTTP server listening on port <code>27020</code>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Method</th>
+<th style="text-align: left;">Endpoint</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>GET</code></td>
+<td style="text-align: left;"><code>/health</code></td>
+<td style="text-align: left;">Heartbeat endpoint returning server status, tick rate, and uptime.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>POST</code></td>
+<td style="text-align: left;"><code>/admin/command</code></td>
+<td style="text-align: left;">Executes an in-game or console command via JSON <code>{"command": "..."}</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>GET</code></td>
+<td style="text-align: left;"><code>/api/players</code></td>
+<td style="text-align: left;">Returns real-time list of online players with Steam IDs and coordinates.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>GET</code></td>
+<td style="text-align: left;"><code>/api/guilds</code></td>
+<td style="text-align: left;">Returns all registered guilds, member counts, and base camp locations.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>POST</code></td>
+<td style="text-align: left;"><code>/api/broadcast</code></td>
+<td style="text-align: left;">Broadcasts an on-screen game alert or modal dialog to all players.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example-request">Example Request</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://127.0.0.1:27020/admin/command<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">     </span>-H<span class="w"> </span><span class="s2">"Content-Type: application/json"</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">     </span>-d<span class="w"> </span><span class="s1">'{"command": "/spawnp Smooth SheepBall 5"}'</span>
+</code></pre></div>
 
 
 
@@ -719,10 +716,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

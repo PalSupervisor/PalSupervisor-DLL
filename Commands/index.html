@@ -1,0 +1,2392 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Enterprise Native Supervisor & Anti-Cheat for Palworld Dedicated Servers">
+      
+      
+        <meta name="author" content="PalSupervisor">
+      
+      
+        <link rel="canonical" href="https://palsupervisor.github.io/PalSupervisor-DLL/Commands/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../Features/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Commands - PalSupervisor Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#commands" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="PalSupervisor Wiki" class="md-header__button md-logo" aria-label="PalSupervisor Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PalSupervisor Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Commands
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/PalSupervisor/PalSupervisor-DLL" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    PalSupervisor/PalSupervisor-DLL
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Commands
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Features/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Features
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Installation/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Installation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../RESTAPI/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  REST API
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PalSupervisor Wiki" class="md-nav__button md-logo" aria-label="PalSupervisor Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PalSupervisor Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/PalSupervisor/PalSupervisor-DLL" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    PalSupervisor/PalSupervisor-DLL
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commands
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Are Commands?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#who-can-use-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Who Can Use Commands?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moderation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moderation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#player-cheats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Player &amp; Cheats
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teleportation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teleportation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inventory-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inventory &amp; Items
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pals-npcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pals &amp; NPCs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bosses-raids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bosses &amp; Raids
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#progression-unlocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Progression &amp; Unlocks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guilds-bases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guilds &amp; Bases
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#world-janitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        World &amp; Janitor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anti-cheat-audit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anti-Cheat &amp; Audit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#announcements-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Announcements &amp; UI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Info
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RESTAPI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REST API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Are Commands?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#who-can-use-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Who Can Use Commands?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moderation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moderation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#player-cheats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Player &amp; Cheats
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teleportation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teleportation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inventory-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inventory &amp; Items
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pals-npcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pals &amp; NPCs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bosses-raids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bosses &amp; Raids
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#progression-unlocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Progression &amp; Unlocks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guilds-bases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guilds &amp; Bases
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#world-janitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        World &amp; Janitor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anti-cheat-audit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anti-Cheat &amp; Audit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#announcements-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Announcements &amp; UI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Info
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="commands">Commands</h1>
+<h2 id="what-are-commands">What Are Commands?</h2>
+<p>Commands are special text-based instructions that allow server administrators to interact with PalServer in real time. Commands start with a <code>/</code> (customizable in <code>config.json</code>) followed by the command name and optional arguments.</p>
+<h2 id="who-can-use-commands">Who Can Use Commands?</h2>
+<p>Commands marked as <strong>Admin</strong> require the executing player to be listed in <code>admin_steam_ids</code> or authenticated via the REST API. Commands marked as <strong>All</strong> can be executed by any connected player.</p>
+<div class="admonition note">
+<p class="admonition-title">Command Syntax Guide</p>
+<p><code>/command_name &lt;required_argument&gt; [optional_argument={default}]</code></p>
+<ul>
+<li><code>&lt;required_argument&gt;</code> &rarr; Must be included when executing the command.</li>
+<li><code>[optional_argument]</code> &rarr; Optional parameter. If omitted, default server value is used.</li>
+</ul>
+</div>
+<hr />
+<h2 id="moderation">Moderation</h2>
+<details class="info">
+<summary>/kick</summary>
+<p><strong>Syntax:</strong> <code>/kick &lt;player&gt; [reason]</code><br />
+<strong>Description:</strong> Kick a player from the server.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>[reason]</code> <strong>[Optional]</strong> &mdash; Text explanation for the kick/ban action.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>/kick Smooth "AFK in spawn"
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>/kick 76561198000000000
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/ban</summary>
+<p><strong>Syntax:</strong> <code>/ban &lt;player&gt; [reason]</code><br />
+<strong>Description:</strong> Permanently ban a player.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>[reason]</code> <strong>[Optional]</strong> &mdash; Text explanation for the kick/ban action.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>/ban CheaterPlayer "Speedhacking detected"
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/unban</summary>
+<p><strong>Syntax:</strong> <code>/unban &lt;player/uid/ip&gt;</code><br />
+<strong>Description:</strong> Remove a ban on a player UID or IP address.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player/uid/ip&gt;</code> <strong>[Required]</strong> &mdash; Parameter: player/uid/ip</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>/unban 76561198000000000
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/banlist</summary>
+<p><strong>Syntax:</strong> <code>/banlist</code><br />
+<strong>Description:</strong> Display list of all banned players.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* None</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>/banlist
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/whitelist</summary>
+<p><strong>Syntax:</strong> <code>/whitelist &lt;on|off|add|remove|list&gt; [player]</code><br />
+<strong>Description:</strong> Manage server whitelist access control.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;on|off|add|remove|list&gt;</code> <strong>[Required]</strong> &mdash; State toggle ('on' or 'off').
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>/whitelist &lt;on|off|add|remove|list&gt; [player]
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/warn</summary>
+<p><strong>Syntax:</strong> <code>/warn &lt;player&gt; &lt;message&gt;</code><br />
+<strong>Description:</strong> Send a formal warning and record a violation.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>&lt;message&gt;</code> <strong>[Required]</strong> &mdash; Message string to broadcast or send to player.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>/warn &lt;player&gt; &lt;message&gt;
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/freeze</summary>
+<p><strong>Syntax:</strong> <code>/freeze &lt;player&gt; [seconds]</code><br />
+<strong>Description:</strong> Disable player input. 0 = until /unfreeze.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>[seconds]</code> <strong>[Optional]</strong> &mdash; Duration in seconds (0 = permanent / until manual unmute).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>/freeze &lt;player&gt; [seconds]
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/unfreeze</summary>
+<p><strong>Syntax:</strong> <code>/unfreeze &lt;player&gt;</code><br />
+<strong>Description:</strong> Re-enable input for a frozen player.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>/unfreeze &lt;player&gt;
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/mute</summary>
+<p><strong>Syntax:</strong> <code>/mute &lt;player&gt; [seconds]</code><br />
+<strong>Description:</strong> Block a player from sending chat. 0 = permanent.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>[seconds]</code> <strong>[Optional]</strong> &mdash; Duration in seconds (0 = permanent / until manual unmute).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>/mute &lt;player&gt; [seconds]
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/unmute</summary>
+<p><strong>Syntax:</strong> <code>/unmute &lt;player&gt;</code><br />
+<strong>Description:</strong> Restore chat for a muted player.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>/unmute &lt;player&gt;
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/kickall</summary>
+<p><strong>Syntax:</strong> <code>/kickall [reason]</code><br />
+<strong>Description:</strong> Kick all non-admin players from the server.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[reason]</code> <strong>[Optional]</strong> &mdash; Text explanation for the kick/ban action.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>/kickall [reason]
+</code></pre></div></p>
+</details>
+<h2 id="player-cheats">Player &amp; Cheats</h2>
+<details class="info">
+<summary>/godmode</summary>
+<p><strong>Syntax:</strong> <code>/godmode &lt;player&gt; [on|off]</code><br />
+<strong>Description:</strong> Toggle invincibility for a player.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>[on|off]</code> <strong>[Optional]</strong> &mdash; State toggle ('on' or 'off').</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>/godmode
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>/godmode Smooth on
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>/godmode Smooth off
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/adminweapon <em>(aliases: /godweapon, /onehit)</em></summary>
+<p><strong>Syntax:</strong> <code>/adminweapon [on|off|give] [player]</code><br />
+<strong>Description:</strong> Toggle Admin One-Hit Kill/Destroy Weapon mode (bypasses all shields, armor &amp; destroys any entity/object).<br />
+<strong>Aliases:</strong> <code>/godweapon, /onehit</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[on|off|give]</code> <strong>[Optional]</strong> &mdash; State toggle ('on' or 'off').
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>/adminweapon
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>/adminweapon on
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>/adminweapon give Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/heal</summary>
+<p><strong>Syntax:</strong> <code>/heal [player]</code><br />
+<strong>Description:</strong> Restore a player to full HP. Defaults to self.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>/heal
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>/heal Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/sethp</summary>
+<p><strong>Syntax:</strong> <code>/sethp &lt;player&gt; &lt;amount&gt;</code><br />
+<strong>Description:</strong> Set a player's exact HP via CheatManager.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>&lt;amount&gt;</code> <strong>[Required]</strong> &mdash; Quantity count (e.g. 1, 50, 1000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>/sethp Smooth 1500
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/setsp <em>(aliases: /setstamina)</em></summary>
+<p><strong>Syntax:</strong> <code>/setsp &lt;player&gt; &lt;amount&gt;</code><br />
+<strong>Description:</strong> Set a player's exact SP (stamina) via CheatManager.<br />
+<strong>Aliases:</strong> <code>/setstamina</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>&lt;amount&gt;</code> <strong>[Required]</strong> &mdash; Quantity count (e.g. 1, 50, 1000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>/setsp Smooth 800
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/respawn</summary>
+<p><strong>Syntax:</strong> <code>/respawn [player]</code><br />
+<strong>Description:</strong> Force-respawn a player via CheatManager. Defaults to self.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>/respawn
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>/respawn Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/setlevel</summary>
+<p><strong>Syntax:</strong> <code>/setlevel [player] &lt;1-80|max&gt;</code><br />
+<strong>Description:</strong> Set player level directly (up to 80+).<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>&lt;1-80|max&gt;</code> <strong>[Required]</strong> &mdash; Parameter: 1-80|max</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>/setlevel Smooth 55
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>/setlevel max
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/resetlevel</summary>
+<p><strong>Syntax:</strong> <code>/resetlevel [player]</code><br />
+<strong>Description:</strong> Reset player to Level 1 and 0 EXP.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>/resetlevel Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/resetstats <em>(aliases: /respec)</em></summary>
+<p><strong>Syntax:</strong> <code>/resetstats [player]</code><br />
+<strong>Description:</strong> Refund all allocated player stat points back to unallocated status points.<br />
+<strong>Aliases:</strong> <code>/respec</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>/resetstats Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/clearstats</summary>
+<p><strong>Syntax:</strong> <code>/clearstats [player]</code><br />
+<strong>Description:</strong> Wipe all allocated and unspent status points to 0.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>/clearstats Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/setmaxweight</summary>
+<p><strong>Syntax:</strong> <code>/setmaxweight [player] &lt;weight&gt;</code><br />
+<strong>Description:</strong> Override maximum inventory carrying weight.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>&lt;weight&gt;</code> <strong>[Required]</strong> &mdash; Carrying weight capacity limit.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>/setmaxweight Smooth 50000
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/rename</summary>
+<p><strong>Syntax:</strong> <code>/rename [player] &lt;NewNickname&gt;</code><br />
+<strong>Description:</strong> Change player's in-game nickname.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>&lt;NewNickname&gt;</code> <strong>[Required]</strong> &mdash; New character display name.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>/rename Smooth "Overlord"
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/kill</summary>
+<p><strong>Syntax:</strong> <code>/kill [player]</code><br />
+<strong>Description:</strong> Kill a player (instant lethal death drop). Defaults to self.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>/kill
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>/kill Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/knock</summary>
+<p><strong>Syntax:</strong> <code>/knock [player]</code><br />
+<strong>Description:</strong> Knock a player into DBNO bleedout state (0 HP). Defaults to self.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>/knock
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>/knock Smooth
+</code></pre></div></p>
+</details>
+<h2 id="teleportation">Teleportation</h2>
+<details class="info">
+<summary>/tp</summary>
+<p><strong>Syntax:</strong> <code>/tp &lt;player&gt; &lt;x&gt; &lt;y&gt; &lt;z&gt;  or  &lt;player&gt; &lt;destplayer&gt;</code><br />
+<strong>Description:</strong> Teleport a player to coordinates or another player.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>&lt;x&gt;</code> <strong>[Required]</strong> &mdash; World coordinate axis X (in Unreal Engine centimeters).
+* <code>&lt;y&gt;</code> <strong>[Required]</strong> &mdash; World coordinate axis Y (in Unreal Engine centimeters).
+* <code>&lt;z&gt;</code> <strong>[Required]</strong> &mdash; World coordinate axis Z (in Unreal Engine centimeters).
+* <code>or</code> <strong>[Required]</strong> &mdash; Parameter: or
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>&lt;destplayer&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>/tp Smooth -291200 253700 -1990
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>/tp Smooth AdminPlayer
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/tpme</summary>
+<p><strong>Syntax:</strong> <code>/tpme &lt;player&gt;</code><br />
+<strong>Description:</strong> Teleport yourself to a player.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>/tpme Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/tp2me</summary>
+<p><strong>Syntax:</strong> <code>/tp2me &lt;player&gt;</code><br />
+<strong>Description:</strong> Pull a player to your location.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>/tp2me Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/spectate</summary>
+<p><strong>Syntax:</strong> <code>/spectate &lt;player&gt;</code><br />
+<strong>Description:</strong> Spectate a player in admin mode.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>/spectate Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/tp2treasure</summary>
+<p><strong>Syntax:</strong> <code>/tp2treasure [grade 1-5]</code><br />
+<strong>Description:</strong> Teleport to the nearest unopened wilderness treasure chest (optionally of specific grade).<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[grade 1-5]</code> <strong>[Optional]</strong> &mdash; Level grade from 1 to 5.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>/tp2treasure
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>/tp2treasure 5
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/tp2deathbag</summary>
+<p><strong>Syntax:</strong> <code>/tp2deathbag &lt;player&gt;</code><br />
+<strong>Description:</strong> Teleport directly to a player's lost death drop bag.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>/tp2deathbag Smooth
+</code></pre></div></p>
+</details>
+<h2 id="inventory-items">Inventory &amp; Items</h2>
+<details class="info">
+<summary>/giveitem <em>(aliases: /givei)</em></summary>
+<p><strong>Syntax:</strong> <code>/giveitem &lt;player&gt; &lt;itemid&gt; [amount]</code><br />
+<strong>Description:</strong> Give items to a player.<br />
+<strong>Aliases:</strong> <code>/givei</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>&lt;itemid&gt;</code> <strong>[Required]</strong> &mdash; Item static ID (e.g. PalSphere, Wood, Diamond).
+* <code>[amount]</code> <strong>[Optional]</strong> &mdash; Quantity count (e.g. 1, 50, 1000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>/giveitem Smooth PalSphere 50
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>/giveitem Smooth AncientTechnologyPoint 5
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/rewardi <em>(aliases: /rewarditem, /itemreward)</em></summary>
+<p><strong>Syntax:</strong> <code>/rewardi [player|all] &lt;item_name_or_id&gt; [amount]</code><br />
+<strong>Description:</strong> Reward items to inventory with native animated reward cards and HUD log.<br />
+<strong>Aliases:</strong> <code>/rewarditem, /itemreward</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player|all]</code> <strong>[Optional]</strong> &mdash; Parameter: player|all
+* <code>&lt;item_name_or_id&gt;</code> <strong>[Required]</strong> &mdash; Item static ID (e.g. PalSphere, Wood, Diamond).
+* <code>[amount]</code> <strong>[Optional]</strong> &mdash; Quantity count (e.g. 1, 50, 1000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>/rewardi all PalSphere 25
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>/rewardi Smooth Diamond 5
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/repair</summary>
+<p><strong>Syntax:</strong> <code>/repair &lt;player&gt;</code><br />
+<strong>Description:</strong> Restore full durability to all equipped weapons, armor, and gliders.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>/repair Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/inspectinv</summary>
+<p><strong>Syntax:</strong> <code>/inspectinv &lt;player&gt;</code><br />
+<strong>Description:</strong> Inspect a player's common inventory items, quantities, and durability.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>/inspectinv Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/clearinv</summary>
+<p><strong>Syntax:</strong> <code>/clearinv &lt;player&gt;</code><br />
+<strong>Description:</strong> Clear all items from a player's common inventory.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>/clearinv Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/takeitem <em>(aliases: /removeitem)</em></summary>
+<p><strong>Syntax:</strong> <code>/takeitem [player] &lt;item_id&gt; [amount]</code><br />
+<strong>Description:</strong> Remove a specified item and quantity (or all) from a player's inventory.<br />
+<strong>Aliases:</strong> <code>/removeitem</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>&lt;item_id&gt;</code> <strong>[Required]</strong> &mdash; Parameter: item_id
+* <code>[amount]</code> <strong>[Optional]</strong> &mdash; Quantity count (e.g. 1, 50, 1000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>/takeitem Smooth Wood 100
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>/takeitem Smooth Diamond
+</code></pre></div></p>
+</details>
+<h2 id="pals-npcs">Pals &amp; NPCs</h2>
+<details class="info">
+<summary>/rewardp <em>(aliases: /rewardpal, /palreward)</em></summary>
+<p><strong>Syntax:</strong> <code>/rewardp [player|all] &lt;pal_name_or_id&gt; [level] [rank]</code><br />
+<strong>Description:</strong> Reward a Pal to Party/PalBox with native capture visuals.<br />
+<strong>Aliases:</strong> <code>/rewardpal, /palreward</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player|all]</code> <strong>[Optional]</strong> &mdash; Parameter: player|all
+* <code>&lt;pal_name_or_id&gt;</code> <strong>[Required]</strong> &mdash; Parameter: pal_name_or_id
+* <code>[level]</code> <strong>[Optional]</strong> &mdash; Level from 1 to 60+.
+* <code>[rank]</code> <strong>[Optional]</strong> &mdash; Condensation star rank (0 to 4).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>/rewardp all JetDragon 50 4
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>/rewardp Smooth Anubis 40 2
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/revivepals</summary>
+<p><strong>Syntax:</strong> <code>/revivepals &lt;player&gt;</code><br />
+<strong>Description:</strong> Revive and fully restore HP, hunger, and sanity of all party Pals.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>/revivepals Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/wipepals</summary>
+<p><strong>Syntax:</strong> <code>/wipepals &lt;player&gt;</code><br />
+<strong>Description:</strong> Clear all Pals from a player's active party.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>/wipepals Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/givepal <em>(aliases: /givep)</em></summary>
+<p><strong>Syntax:</strong> <code>/givepal [player] &lt;PalID&gt; [level] [rank]</code><br />
+<strong>Description:</strong> Spawn and add a Pal directly to a player's party.<br />
+<strong>Aliases:</strong> <code>/givep</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>&lt;PalID&gt;</code> <strong>[Required]</strong> &mdash; Internal Pal species ID (e.g. SheepBall, JetDragon, Anubis).
+* <code>[level]</code> <strong>[Optional]</strong> &mdash; Level from 1 to 60+.
+* <code>[rank]</code> <strong>[Optional]</strong> &mdash; Condensation star rank (0 to 4).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>/givepal Smooth JetDragon 50 4
+<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>/givepal SheepBall 1
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/givenpc <em>(aliases: /given)</em></summary>
+<p><strong>Syntax:</strong> <code>/givenpc [player] &lt;NpcID&gt; [level]</code><br />
+<strong>Description:</strong> Add a human NPC directly to a player's party / PalBox.<br />
+<strong>Aliases:</strong> <code>/given</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>&lt;NpcID&gt;</code> <strong>[Required]</strong> &mdash; Human NPC entity ID (e.g. Police_Rifle_Crime_Lv5).
+* <code>[level]</code> <strong>[Optional]</strong> &mdash; Level from 1 to 60+.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>/givenpc Smooth Police_Rifle_Crime_Lv5 50
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/spawnp <em>(aliases: /spawnpal)</em></summary>
+<p><strong>Syntax:</strong> <code>/spawnp [player] &lt;PalID&gt; [level]</code><br />
+<strong>Description:</strong> Spawn a wild Pal in the world next to a player.<br />
+<strong>Aliases:</strong> <code>/spawnpal</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>&lt;PalID&gt;</code> <strong>[Required]</strong> &mdash; Internal Pal species ID (e.g. SheepBall, JetDragon, Anubis).
+* <code>[level]</code> <strong>[Optional]</strong> &mdash; Level from 1 to 60+.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>/spawnp SheepBall 5
+<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>/spawnp Smooth JetDragon 50
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/spawnw</summary>
+<p><strong>Syntax:</strong> <code>/spawnw &lt;PalID&gt; &lt;level&gt; &lt;x&gt; &lt;y&gt; &lt;z&gt;</code><br />
+<strong>Description:</strong> Spawn a wild Pal in the world at specific coordinates.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;PalID&gt;</code> <strong>[Required]</strong> &mdash; Internal Pal species ID (e.g. SheepBall, JetDragon, Anubis).
+* <code>&lt;level&gt;</code> <strong>[Required]</strong> &mdash; Level from 1 to 60+.
+* <code>&lt;x&gt;</code> <strong>[Required]</strong> &mdash; World coordinate axis X (in Unreal Engine centimeters).
+* <code>&lt;y&gt;</code> <strong>[Required]</strong> &mdash; World coordinate axis Y (in Unreal Engine centimeters).
+* <code>&lt;z&gt;</code> <strong>[Required]</strong> &mdash; World coordinate axis Z (in Unreal Engine centimeters).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>/spawnw SheepBall 15 -291200 253700 -1990
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/spawnnpcp <em>(aliases: /spawnnpc)</em></summary>
+<p><strong>Syntax:</strong> <code>/spawnnpcp [player] &lt;NpcID&gt; [level]</code><br />
+<strong>Description:</strong> Spawn an active human NPC in front of a player.<br />
+<strong>Aliases:</strong> <code>/spawnnpc</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>&lt;NpcID&gt;</code> <strong>[Required]</strong> &mdash; Human NPC entity ID (e.g. Police_Rifle_Crime_Lv5).
+* <code>[level]</code> <strong>[Optional]</strong> &mdash; Level from 1 to 60+.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>/spawnnpcp Smooth Police_Rifle_Crime_Lv5 50
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/spawnnpcw</summary>
+<p><strong>Syntax:</strong> <code>/spawnnpcw &lt;NpcID&gt; &lt;level&gt; &lt;x&gt; &lt;y&gt; &lt;z&gt;</code><br />
+<strong>Description:</strong> Spawn an active human NPC at specific world coordinates.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;NpcID&gt;</code> <strong>[Required]</strong> &mdash; Human NPC entity ID (e.g. Police_Rifle_Crime_Lv5).
+* <code>&lt;level&gt;</code> <strong>[Required]</strong> &mdash; Level from 1 to 60+.
+* <code>&lt;x&gt;</code> <strong>[Required]</strong> &mdash; World coordinate axis X (in Unreal Engine centimeters).
+* <code>&lt;y&gt;</code> <strong>[Required]</strong> &mdash; World coordinate axis Y (in Unreal Engine centimeters).
+* <code>&lt;z&gt;</code> <strong>[Required]</strong> &mdash; World coordinate axis Z (in Unreal Engine centimeters).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>/spawnnpcw Police_Rifle_Crime_Lv5 50 -291200 253700 -1990
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/takepal <em>(aliases: /removepal)</em></summary>
+<p><strong>Syntax:</strong> <code>/takepal [player] &lt;pal_id|slot_1-5&gt; [count]</code><br />
+<strong>Description:</strong> Remove a specified Pal species or specific party slot (1-5) from a player.<br />
+<strong>Aliases:</strong> <code>/removepal</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>&lt;pal_id|slot_1-5&gt;</code> <strong>[Required]</strong> &mdash; Level grade from 1 to 5.
+* <code>[count]</code> <strong>[Optional]</strong> &mdash; Parameter: count</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>/takepal Smooth 1
+<a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a>/takepal Smooth SheepBall 1
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/palparty <em>(aliases: /inspectpals)</em></summary>
+<p><strong>Syntax:</strong> <code>/palparty [player]</code><br />
+<strong>Description:</strong> Inspect a player's active Pal party (slots, level, IVs, rank, passives).<br />
+<strong>Aliases:</strong> <code>/inspectpals</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>/palparty Smooth
+</code></pre></div></p>
+</details>
+<h2 id="bosses-raids">Bosses &amp; Raids</h2>
+<details class="info">
+<summary>/listtemplates</summary>
+<p><strong>Syntax:</strong> <code>/listtemplates</code><br />
+<strong>Description:</strong> List all loaded Pal and Boss encounter templates.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* None</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>/listtemplates
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/reloadtemplates</summary>
+<p><strong>Syntax:</strong> <code>/reloadtemplates</code><br />
+<strong>Description:</strong> Reload custom templates from PalSupervisor/Templates json files.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* None</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>/reloadtemplates
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/givecustom <em>(aliases: /rewardcustom)</em></summary>
+<p><strong>Syntax:</strong> <code>/givecustom [player] &lt;template_name&gt;</code><br />
+<strong>Description:</strong> Give custom Pal directly to player party / PalBox (reads pal_data only).<br />
+<strong>Aliases:</strong> <code>/rewardcustom</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>&lt;template_name&gt;</code> <strong>[Required]</strong> &mdash; Name of the boss/Pal JSON template in PalSupervisor/Templates/.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>/givecustom Smooth AlphaBoss
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/spawncustom</summary>
+<p><strong>Syntax:</strong> <code>/spawncustom &lt;template_name&gt; [distance]</code><br />
+<strong>Description:</strong> Spawn custom Pal from template into the world.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;template_name&gt;</code> <strong>[Required]</strong> &mdash; Name of the boss/Pal JSON template in PalSupervisor/Templates/.
+* <code>[distance]</code> <strong>[Optional]</strong> &mdash; Spawn distance in front of admin (default: 500).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>/spawncustom CustomShadowbeak
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/spawnboss</summary>
+<p><strong>Syntax:</strong> <code>/spawnboss &lt;template_name&gt; [distance]</code><br />
+<strong>Description:</strong> Summon full Boss Encounter with minions, loot engine, and announcements.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;template_name&gt;</code> <strong>[Required]</strong> &mdash; Name of the boss/Pal JSON template in PalSupervisor/Templates/.
+* <code>[distance]</code> <strong>[Optional]</strong> &mdash; Spawn distance in front of admin (default: 500).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a>/spawnboss AlphaBoss 600
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/killboss <em>(aliases: /despawnboss)</em></summary>
+<p><strong>Syntax:</strong> <code>/killboss</code><br />
+<strong>Description:</strong> Despawn all active summoned bosses and their minions immediately.<br />
+<strong>Aliases:</strong> <code>/despawnboss</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* None</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>/killboss
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/bosses</summary>
+<p><strong>Syntax:</strong> <code>/bosses</code><br />
+<strong>Description:</strong> Query world boss spawners, alive/dead state, and coordinates.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* None</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>/bosses
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/respawnboss</summary>
+<p><strong>Syntax:</strong> <code>/respawnboss &lt;boss_name|spawner_name|all&gt;</code><br />
+<strong>Description:</strong> Force an immediate respawn of an Alpha boss or spawner.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;boss_name|spawner_name|all&gt;</code> <strong>[Required]</strong> &mdash; Parameter: boss_name|spawner_name|all</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a>/respawnboss all
+<a id="__codelineno-55-2" name="__codelineno-55-2" href="#__codelineno-55-2"></a>/respawnboss Kingpaca
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/raid</summary>
+<p><strong>Syntax:</strong> <code>/raid [player]</code><br />
+<strong>Description:</strong> Trigger an invader march / raid against a player's nearest base camp.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a>/raid Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/stopraid</summary>
+<p><strong>Syntax:</strong> <code>/stopraid</code><br />
+<strong>Description:</strong> Cancel all active enemy invasion raids.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* None</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a>/stopraid
+</code></pre></div></p>
+</details>
+<h2 id="progression-unlocks">Progression &amp; Unlocks</h2>
+<details class="info">
+<summary>/giveexp</summary>
+<p><strong>Syntax:</strong> <code>/giveexp &lt;player&gt; &lt;amount&gt;</code><br />
+<strong>Description:</strong> Give experience points to a player.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>&lt;amount&gt;</code> <strong>[Required]</strong> &mdash; Quantity count (e.g. 1, 50, 1000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a>/giveexp Smooth 50000
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/givetech</summary>
+<p><strong>Syntax:</strong> <code>/givetech &lt;player&gt; &lt;amount&gt; [boss]</code><br />
+<strong>Description:</strong> Give technology points. Add 'boss' for boss tech points.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>&lt;amount&gt;</code> <strong>[Required]</strong> &mdash; Quantity count (e.g. 1, 50, 1000).
+* <code>[boss]</code> <strong>[Optional]</strong> &mdash; Parameter: boss</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a>/givetech Smooth 10
+<a id="__codelineno-59-2" name="__codelineno-59-2" href="#__codelineno-59-2"></a>/givetech Smooth 5 boss
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/rewardexp <em>(aliases: /expreward)</em></summary>
+<p><strong>Syntax:</strong> <code>/rewardexp [player|all] &lt;amount&gt;</code><br />
+<strong>Description:</strong> Reward EXP to party with native on-screen Victory EXP banner.<br />
+<strong>Aliases:</strong> <code>/expreward</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player|all]</code> <strong>[Optional]</strong> &mdash; Parameter: player|all
+* <code>&lt;amount&gt;</code> <strong>[Required]</strong> &mdash; Quantity count (e.g. 1, 50, 1000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a>/rewardexp all 100000
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/unlockmap</summary>
+<p><strong>Syntax:</strong> <code>/unlockmap [player]</code><br />
+<strong>Description:</strong> Clear fog of war and fully discover the world map.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a>/unlockmap Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/unlockfasttravel</summary>
+<p><strong>Syntax:</strong> <code>/unlockfasttravel [player]</code><br />
+<strong>Description:</strong> Unlock all Fast Travel statues on the map.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a>/unlockfasttravel Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/unlockbarriers</summary>
+<p><strong>Syntax:</strong> <code>/unlockbarriers [player]</code><br />
+<strong>Description:</strong> Unlock all map barriers / area seals.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a>/unlockbarriers Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/completepaldex</summary>
+<p><strong>Syntax:</strong> <code>/completepaldex [player]</code><br />
+<strong>Description:</strong> Complete Paldex capture and encounter records for all Pals.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a>/completepaldex Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/setrelics</summary>
+<p><strong>Syntax:</strong> <code>/setrelics [player] &lt;amount&gt;</code><br />
+<strong>Description:</strong> Set Lifmunk Effigies collected for capture power upgrades.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>&lt;amount&gt;</code> <strong>[Required]</strong> &mdash; Quantity count (e.g. 1, 50, 1000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a>/setrelics Smooth 20
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/maxrelics</summary>
+<p><strong>Syntax:</strong> <code>/maxrelics [player]</code><br />
+<strong>Description:</strong> Max out Lifmunk Effigies / capture power.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a>/maxrelics Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/triggerwanted <em>(aliases: /wanted)</em></summary>
+<p><strong>Syntax:</strong> <code>/triggerwanted [player] [1-5]</code><br />
+<strong>Description:</strong> Trigger criminal wanted status (1-5 stars) and summon PIDF response.<br />
+<strong>Aliases:</strong> <code>/wanted</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>[1-5]</code> <strong>[Optional]</strong> &mdash; Level grade from 1 to 5.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a>/triggerwanted Smooth 5
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/clearwanted <em>(aliases: /pardon)</em></summary>
+<p><strong>Syntax:</strong> <code>/clearwanted [player]</code><br />
+<strong>Description:</strong> Pardon player and clear active criminal wanted status.<br />
+<strong>Aliases:</strong> <code>/pardon</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a>/clearwanted Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/unlockalltech</summary>
+<p><strong>Syntax:</strong> <code>/unlockalltech [player]</code><br />
+<strong>Description:</strong> Unlock all technology recipes (building, crafting, weapons, saddles).<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-69-1" name="__codelineno-69-1" href="#__codelineno-69-1"></a>/unlockalltech Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/lockmap</summary>
+<p><strong>Syntax:</strong> <code>/lockmap [player]</code><br />
+<strong>Description:</strong> Lock/cover world map fog of war.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-70-1" name="__codelineno-70-1" href="#__codelineno-70-1"></a>/lockmap Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/lockfasttravel</summary>
+<p><strong>Syntax:</strong> <code>/lockfasttravel [player]</code><br />
+<strong>Description:</strong> Lock all Fast Travel statues.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-71-1" name="__codelineno-71-1" href="#__codelineno-71-1"></a>/lockfasttravel Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/resetpaldex <em>(aliases: /clearpaldex)</em></summary>
+<p><strong>Syntax:</strong> <code>/resetpaldex [player]</code><br />
+<strong>Description:</strong> Reset/clear Paldex entries.<br />
+<strong>Aliases:</strong> <code>/clearpaldex</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-72-1" name="__codelineno-72-1" href="#__codelineno-72-1"></a>/resetpaldex Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/resetalltech <em>(aliases: /lockalltech)</em></summary>
+<p><strong>Syntax:</strong> <code>/resetalltech [player]</code><br />
+<strong>Description:</strong> Reset and lock all technology recipes.<br />
+<strong>Aliases:</strong> <code>/lockalltech</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-73-1" name="__codelineno-73-1" href="#__codelineno-73-1"></a>/resetalltech Smooth
+</code></pre></div></p>
+</details>
+<h2 id="guilds-bases">Guilds &amp; Bases</h2>
+<details class="info">
+<summary>/guildlist</summary>
+<p><strong>Syntax:</strong> <code>/guildlist</code><br />
+<strong>Description:</strong> List all active guilds, levels, member counts, and base counts.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* None</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-74-1" name="__codelineno-74-1" href="#__codelineno-74-1"></a>/guildlist
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/guildinfo</summary>
+<p><strong>Syntax:</strong> <code>/guildinfo &lt;guild_id|guild_name&gt;</code><br />
+<strong>Description:</strong> Inspect a guild: master, member roster, base camp IDs, raid status.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;guild_id|guild_name&gt;</code> <strong>[Required]</strong> &mdash; Parameter: guild_id|guild_name</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-75-1" name="__codelineno-75-1" href="#__codelineno-75-1"></a>/guildinfo "KnightsOfPal"
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/guildkick</summary>
+<p><strong>Syntax:</strong> <code>/guildkick &lt;guild_id&gt; &lt;player_uid|player_name&gt;</code><br />
+<strong>Description:</strong> Kick a member from a guild.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;guild_id&gt;</code> <strong>[Required]</strong> &mdash; Target Guild name or unique GUID.
+* <code>&lt;player_uid|player_name&gt;</code> <strong>[Required]</strong> &mdash; Parameter: player_uid|player_name</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-76-1" name="__codelineno-76-1" href="#__codelineno-76-1"></a>/guildkick "KnightsOfPal" BadPlayer
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/guilddisband</summary>
+<p><strong>Syntax:</strong> <code>/guilddisband &lt;guild_id&gt;</code><br />
+<strong>Description:</strong> Permanently disband and dispose a guild.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;guild_id&gt;</code> <strong>[Required]</strong> &mdash; Target Guild name or unique GUID.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-77-1" name="__codelineno-77-1" href="#__codelineno-77-1"></a>/guilddisband "OldGuild"
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/baseinfo</summary>
+<p><strong>Syntax:</strong> <code>/baseinfo [base_id]</code><br />
+<strong>Description:</strong> Show base camps or inspect workers (HP, SAN, sickness) and chests for a specific base.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[base_id]</code> <strong>[Optional]</strong> &mdash; Unique base camp ID or base index.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-78-1" name="__codelineno-78-1" href="#__codelineno-78-1"></a>/baseinfo
+<a id="__codelineno-78-2" name="__codelineno-78-2" href="#__codelineno-78-2"></a>/baseinfo 1
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/basechests</summary>
+<p><strong>Syntax:</strong> <code>/basechests &lt;base_id&gt;</code><br />
+<strong>Description:</strong> Inspect container storage contents and locks inside a base camp.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;base_id&gt;</code> <strong>[Required]</strong> &mdash; Unique base camp ID or base index.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-79-1" name="__codelineno-79-1" href="#__codelineno-79-1"></a>/basechests 1
+</code></pre></div></p>
+</details>
+<h2 id="world-janitor">World &amp; Janitor</h2>
+<details class="info">
+<summary>/worldtime</summary>
+<p><strong>Syntax:</strong> <code>/worldtime &lt;hour 0-23&gt;</code><br />
+<strong>Description:</strong> Set the in-game world clock hour (server-wide).<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;hour 0-23&gt;</code> <strong>[Required]</strong> &mdash; World hour between 0 (midnight) and 23.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-80-1" name="__codelineno-80-1" href="#__codelineno-80-1"></a>/worldtime 14
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/worldtimescale</summary>
+<p><strong>Syntax:</strong> <code>/worldtimescale &lt;rate&gt;</code><br />
+<strong>Description:</strong> Set the world time progression rate (server-wide).<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;rate&gt;</code> <strong>[Required]</strong> &mdash; Parameter: rate</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-81-1" name="__codelineno-81-1" href="#__codelineno-81-1"></a>/worldtimescale 1.0
+<a id="__codelineno-81-2" name="__codelineno-81-2" href="#__codelineno-81-2"></a>/worldtimescale 2.0
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/save</summary>
+<p><strong>Syntax:</strong> <code>/save</code><br />
+<strong>Description:</strong> Force an immediate world save.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* None</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-82-1" name="__codelineno-82-1" href="#__codelineno-82-1"></a>/save
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/time</summary>
+<p><strong>Syntax:</strong> <code>/time &lt;0-23&gt;</code><br />
+<strong>Description:</strong> Set the world time to a specific hour.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;0-23&gt;</code> <strong>[Required]</strong> &mdash; World hour between 0 (midnight) and 23.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-83-1" name="__codelineno-83-1" href="#__codelineno-83-1"></a>/time 12
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/reloadcfg</summary>
+<p><strong>Syntax:</strong> <code>/reloadcfg</code><br />
+<strong>Description:</strong> Hot-reload config.json without restarting.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* None</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-84-1" name="__codelineno-84-1" href="#__codelineno-84-1"></a>/reloadcfg
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/dumptables</summary>
+<p><strong>Syntax:</strong> <code>/dumptables</code><br />
+<strong>Description:</strong> Dump Technology, Recipe, Wild Spawner, and Boss Spawner tables to JSON.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* None</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-85-1" name="__codelineno-85-1" href="#__codelineno-85-1"></a>/dumptables
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/mapsummary</summary>
+<p><strong>Syntax:</strong> <code>/mapsummary</code><br />
+<strong>Description:</strong> Display counts of treasures, death bags, dropped items, wild builds, chests, and supplies.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* None</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-86-1" name="__codelineno-86-1" href="#__codelineno-86-1"></a>/mapsummary
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/deathbags</summary>
+<p><strong>Syntax:</strong> <code>/deathbags</code><br />
+<strong>Description:</strong> List all active player death drops/corpses around the world with coordinates and item counts.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* None</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-87-1" name="__codelineno-87-1" href="#__codelineno-87-1"></a>/deathbags
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/recoverbag</summary>
+<p><strong>Syntax:</strong> <code>/recoverbag [player]</code><br />
+<strong>Description:</strong> Recover lost items from a player's death bag directly into their inventory.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-88-1" name="__codelineno-88-1" href="#__codelineno-88-1"></a>/recoverbag Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/cleardrops</summary>
+<p><strong>Syntax:</strong> <code>/cleardrops [radius]</code><br />
+<strong>Description:</strong> Clear loose dropped ground items to reduce server clutter. Optional radius around admin.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[radius]</code> <strong>[Optional]</strong> &mdash; Distance radius in centimeters around character.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-89-1" name="__codelineno-89-1" href="#__codelineno-89-1"></a>/cleardrops
+<a id="__codelineno-89-2" name="__codelineno-89-2" href="#__codelineno-89-2"></a>/cleardrops 5000
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/clearwildbuilds</summary>
+<p><strong>Syntax:</strong> <code>/clearwildbuilds [radius] [all|unowned]</code><br />
+<strong>Description:</strong> Demolish orphaned or wild structures built outside player base camps.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[radius]</code> <strong>[Optional]</strong> &mdash; Distance radius in centimeters around character.
+* <code>[all|unowned]</code> <strong>[Optional]</strong> &mdash; Parameter: all|unowned</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-90-1" name="__codelineno-90-1" href="#__codelineno-90-1"></a>/clearwildbuilds 10000 unowned
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/triggersupply</summary>
+<p><strong>Syntax:</strong> <code>/triggersupply [capsule|meteor] [player | x y z]</code><br />
+<strong>Description:</strong> Immediately trigger a supply drop capsule or meteorite event at player/coords or random.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[capsule|meteor]</code> <strong>[Optional]</strong> &mdash; Type of supply drop event ('capsule' or 'meteor').
+* <code>[player | x y z]</code> <strong>[Optional]</strong> &mdash; Parameter: player | x y z</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-91-1" name="__codelineno-91-1" href="#__codelineno-91-1"></a>/triggersupply capsule Smooth
+<a id="__codelineno-91-2" name="__codelineno-91-2" href="#__codelineno-91-2"></a>/triggersupply meteor
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/weather</summary>
+<p><strong>Syntax:</strong> <code>/weather [clear|night|sunset|rain|fog|storm|snow|preset]</code><br />
+<strong>Description:</strong> Query current weather or switch the sky weather preset.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[clear|night|sunset|rain|fog|storm|snow|preset]</code> <strong>[Optional]</strong> &mdash; Weather preset (clear, night, sunset, rain, fog, storm, snow).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-92-1" name="__codelineno-92-1" href="#__codelineno-92-1"></a>/weather
+<a id="__codelineno-92-2" name="__codelineno-92-2" href="#__codelineno-92-2"></a>/weather clear
+<a id="__codelineno-92-3" name="__codelineno-92-3" href="#__codelineno-92-3"></a>/weather rain
+<a id="__codelineno-92-4" name="__codelineno-92-4" href="#__codelineno-92-4"></a>/weather storm
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/janitor</summary>
+<p><strong>Syntax:</strong> <code>/janitor [status|run|toggle]</code><br />
+<strong>Description:</strong> Automated server maintenance: view stats, trigger manual sweep, or toggle.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[status|run|toggle]</code> <strong>[Optional]</strong> &mdash; Janitor action ('status', 'run' for immediate sweep, 'toggle').</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-93-1" name="__codelineno-93-1" href="#__codelineno-93-1"></a>/janitor status
+<a id="__codelineno-93-2" name="__codelineno-93-2" href="#__codelineno-93-2"></a>/janitor run
+<a id="__codelineno-93-3" name="__codelineno-93-3" href="#__codelineno-93-3"></a>/janitor toggle
+</code></pre></div></p>
+</details>
+<h2 id="anti-cheat-audit">Anti-Cheat &amp; Audit</h2>
+<details class="info">
+<summary>/info</summary>
+<p><strong>Syntax:</strong> <code>/info &lt;player&gt;</code><br />
+<strong>Description:</strong> Show full profile: position, ping, session, violations, flags.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-94-1" name="__codelineno-94-1" href="#__codelineno-94-1"></a>/info Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/pos</summary>
+<p><strong>Syntax:</strong> <code>/pos &lt;player&gt;</code><br />
+<strong>Description:</strong> Show a player's current position and movement mode.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-95-1" name="__codelineno-95-1" href="#__codelineno-95-1"></a>/pos Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/violations</summary>
+<p><strong>Syntax:</strong> <code>/violations &lt;player&gt;</code><br />
+<strong>Description:</strong> Show violation history and current point total.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-96-1" name="__codelineno-96-1" href="#__codelineno-96-1"></a>/violations Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/acstatus</summary>
+<p><strong>Syntax:</strong> <code>/acstatus</code><br />
+<strong>Description:</strong> Show anti-cheat module status and thresholds.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* None</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-97-1" name="__codelineno-97-1" href="#__codelineno-97-1"></a>/acstatus
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/clearviol</summary>
+<p><strong>Syntax:</strong> <code>/clearviol &lt;player&gt;</code><br />
+<strong>Description:</strong> Clear violation record for a player.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-98-1" name="__codelineno-98-1" href="#__codelineno-98-1"></a>/clearviol Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/clearviolall</summary>
+<p><strong>Syntax:</strong> <code>/clearviolall</code><br />
+<strong>Description:</strong> Clear ALL violation records. Use with caution.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* None</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-99-1" name="__codelineno-99-1" href="#__codelineno-99-1"></a>/clearviolall
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/watch</summary>
+<p><strong>Syntax:</strong> <code>/watch &lt;player&gt; [on|off]</code><br />
+<strong>Description:</strong> Enable enhanced logging and evidence capture for a player.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>[on|off]</code> <strong>[Optional]</strong> &mdash; State toggle ('on' or 'off').</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-100-1" name="__codelineno-100-1" href="#__codelineno-100-1"></a>/watch Smooth on
+<a id="__codelineno-100-2" name="__codelineno-100-2" href="#__codelineno-100-2"></a>/watch Smooth off
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/acexempt</summary>
+<p><strong>Syntax:</strong> <code>/acexempt &lt;player&gt; [on|off]</code><br />
+<strong>Description:</strong> Exempt a player from AC checks (not RPC hooks).<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>[on|off]</code> <strong>[Optional]</strong> &mdash; State toggle ('on' or 'off').</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-101-1" name="__codelineno-101-1" href="#__codelineno-101-1"></a>/acexempt TrustedAdmin on
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/forcecheck</summary>
+<p><strong>Syntax:</strong> <code>/forcecheck &lt;player&gt;</code><br />
+<strong>Description:</strong> Run an immediate AC check on a player out of the normal tick cycle.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-102-1" name="__codelineno-102-1" href="#__codelineno-102-1"></a>/forcecheck Smooth
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/testviolation</summary>
+<p><strong>Syntax:</strong> <code>/testviolation &lt;player&gt; [type] [detail]</code><br />
+<strong>Description:</strong> Record a test anti-cheat violation to verify evidence logging.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
+* <code>[type]</code> <strong>[Optional]</strong> &mdash; Parameter: type
+* <code>[detail]</code> <strong>[Optional]</strong> &mdash; Parameter: detail</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-103-1" name="__codelineno-103-1" href="#__codelineno-103-1"></a>/testviolation Smooth SPEED_HACK "1500cm/s jump"
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/playerinfo <em>(aliases: /inspectplayer)</em></summary>
+<p><strong>Syntax:</strong> <code>/playerinfo &lt;player|uid&gt;</code><br />
+<strong>Description:</strong> Inspect an online or offline player: stats, guild, last position, tech, save info.<br />
+<strong>Aliases:</strong> <code>/inspectplayer</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player|uid&gt;</code> <strong>[Required]</strong> &mdash; Parameter: player|uid</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-104-1" name="__codelineno-104-1" href="#__codelineno-104-1"></a>/playerinfo Smooth
+</code></pre></div></p>
+</details>
+<h2 id="announcements-ui">Announcements &amp; UI</h2>
+<details class="info">
+<summary>/broadcast</summary>
+<p><strong>Syntax:</strong> <code>/broadcast &lt;message&gt;</code><br />
+<strong>Description:</strong> Send a server-wide chat message.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;message&gt;</code> <strong>[Required]</strong> &mdash; Message string to broadcast or send to player.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-105-1" name="__codelineno-105-1" href="#__codelineno-105-1"></a>/broadcast "Server will restart in 15 minutes."
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/alert</summary>
+<p><strong>Syntax:</strong> <code>/alert &lt;player|*&gt; &lt;message&gt;</code><br />
+<strong>Description:</strong> Show an on-screen game alert to a player or all (<em>).<br />
+</em><em>Permissions:</em>* <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;player|*&gt;</code> <strong>[Required]</strong> &mdash; Parameter: player|<em>
+* <code>&lt;message&gt;</code> </em><em>[Required]</em>* &mdash; Message string to broadcast or send to player.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-106-1" name="__codelineno-106-1" href="#__codelineno-106-1"></a>/alert Smooth "Please move your base off the pathway"
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/alertall</summary>
+<p><strong>Syntax:</strong> <code>/alertall &lt;message&gt;</code><br />
+<strong>Description:</strong> Show an on-screen game alert to every player.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;message&gt;</code> <strong>[Required]</strong> &mdash; Message string to broadcast or send to player.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-107-1" name="__codelineno-107-1" href="#__codelineno-107-1"></a>/alertall "Global server event started!"
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/popup <em>(aliases: /dialog)</em></summary>
+<p><strong>Syntax:</strong> <code>/popup [player|all] &lt;message&gt;</code><br />
+<strong>Description:</strong> Show a centered native modal popup dialog with [ OK ] button.<br />
+<strong>Aliases:</strong> <code>/dialog</code><br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player|all]</code> <strong>[Optional]</strong> &mdash; Parameter: player|all
+* <code>&lt;message&gt;</code> <strong>[Required]</strong> &mdash; Message string to broadcast or send to player.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-108-1" name="__codelineno-108-1" href="#__codelineno-108-1"></a>/popup all "Welcome to the PalSupervisor Dedicated Server!"
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/popupall</summary>
+<p><strong>Syntax:</strong> <code>/popupall &lt;message&gt;</code><br />
+<strong>Description:</strong> Broadcast a centered native modal popup dialog to all players.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;message&gt;</code> <strong>[Required]</strong> &mdash; Message string to broadcast or send to player.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-109-1" name="__codelineno-109-1" href="#__codelineno-109-1"></a>/popupall &lt;message&gt;
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/notice</summary>
+<p><strong>Syntax:</strong> <code>/notice &lt;message&gt;</code><br />
+<strong>Description:</strong> Broadcast a full-screen native server notice to all players.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>&lt;message&gt;</code> <strong>[Required]</strong> &mdash; Message string to broadcast or send to player.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-110-1" name="__codelineno-110-1" href="#__codelineno-110-1"></a>/notice "Daily automated maintenance at 04:00 UTC."
+</code></pre></div></p>
+</details>
+<h2 id="general-info">General Info</h2>
+<details class="info">
+<summary>/help</summary>
+<p><strong>Syntax:</strong> <code>/help [command]</code><br />
+<strong>Description:</strong> List commands or show help for a specific command.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>All Players</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[command]</code> <strong>[Optional]</strong> &mdash; Parameter: command</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-111-1" name="__codelineno-111-1" href="#__codelineno-111-1"></a>/help
+<a id="__codelineno-111-2" name="__codelineno-111-2" href="#__codelineno-111-2"></a>/help spawnp
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/players</summary>
+<p><strong>Syntax:</strong> <code>/players</code><br />
+<strong>Description:</strong> List all online players with status.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* None</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-112-1" name="__codelineno-112-1" href="#__codelineno-112-1"></a>/players
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/admins</summary>
+<p><strong>Syntax:</strong> <code>/admins</code><br />
+<strong>Description:</strong> List online admins.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* None</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-113-1" name="__codelineno-113-1" href="#__codelineno-113-1"></a>/admins
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/uptime</summary>
+<p><strong>Syntax:</strong> <code>/uptime</code><br />
+<strong>Description:</strong> Show server uptime, player count, and violation stats.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* None</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-114-1" name="__codelineno-114-1" href="#__codelineno-114-1"></a>/uptime
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/debug</summary>
+<p><strong>Syntax:</strong> <code>/debug</code><br />
+<strong>Description:</strong> Dump full system status: registry, GObjects, GWorld, character, admin flag.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* None</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-115-1" name="__codelineno-115-1" href="#__codelineno-115-1"></a>/debug
+</code></pre></div></p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
