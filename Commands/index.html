@@ -2055,15 +2055,30 @@
 </details>
 <details class="info">
 <summary>/janitor</summary>
-<p><strong>Syntax:</strong> <code>/janitor [status|run|toggle]</code><br />
-<strong>Description:</strong> Automated server maintenance: view stats, trigger manual sweep, or toggle.<br />
+<p><strong>Syntax:</strong> <code>/janitor [status|run|toggle|history]</code><br />
+<strong>Description:</strong> Automated server maintenance: view stats, trigger immediate manual sweep, toggle automation, or inspect recent swept item history.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
 <p><strong>Arguments:</strong>
-* <code>[status|run|toggle]</code> <strong>[Optional]</strong> &mdash; Janitor action ('status', 'run' for immediate sweep, 'toggle').</p>
+* <code>[status|run|toggle|history]</code> <strong>[Optional]</strong> &mdash; Janitor action ('status', 'run', 'toggle', 'history' to view last swept items).</p>
 <p><strong>Example:</strong>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-91-1" name="__codelineno-91-1" href="#__codelineno-91-1"></a>/janitor status
 <a id="__codelineno-91-2" name="__codelineno-91-2" href="#__codelineno-91-2"></a>/janitor run
-<a id="__codelineno-91-3" name="__codelineno-91-3" href="#__codelineno-91-3"></a>/janitor toggle
+<a id="__codelineno-91-3" name="__codelineno-91-3" href="#__codelineno-91-3"></a>/janitor history
+<a id="__codelineno-91-4" name="__codelineno-91-4" href="#__codelineno-91-4"></a>/janitor toggle
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/cleardeathbags</summary>
+<p><strong>Syntax:</strong> <code>/cleardeathbags [player] [max_age_minutes]</code><br />
+<strong>Description:</strong> Purge player death corpse containers. Can target a specific player or all players, with optional age retention filter in minutes.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code>  </p>
+<p><strong>Arguments:</strong>
+* <code>[player]</code> <strong>[Optional]</strong> &mdash; Target player name or Steam ID (leave empty or 'all' for all players).
+* <code>[max_age_minutes]</code> <strong>[Optional]</strong> &mdash; Only purge deathbags older than this many minutes (default 0 = purge immediately).</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-92-1" name="__codelineno-92-1" href="#__codelineno-92-1"></a>/cleardeathbags
+<a id="__codelineno-92-2" name="__codelineno-92-2" href="#__codelineno-92-2"></a>/cleardeathbags Smooth
+<a id="__codelineno-92-3" name="__codelineno-92-3" href="#__codelineno-92-3"></a>/cleardeathbags all 120
 </code></pre></div></p>
 </details>
 <h2 id="anti-cheat-audit">Anti-Cheat &amp; Audit</h2>
@@ -2075,7 +2090,7 @@
 <p><strong>Arguments:</strong>
 * <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-92-1" name="__codelineno-92-1" href="#__codelineno-92-1"></a>/info Smooth
+<div class="highlight"><pre><span></span><code><a id="__codelineno-93-1" name="__codelineno-93-1" href="#__codelineno-93-1"></a>/info Smooth
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2086,7 +2101,7 @@
 <p><strong>Arguments:</strong>
 * <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-93-1" name="__codelineno-93-1" href="#__codelineno-93-1"></a>/pos Smooth
+<div class="highlight"><pre><span></span><code><a id="__codelineno-94-1" name="__codelineno-94-1" href="#__codelineno-94-1"></a>/pos Smooth
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2097,7 +2112,7 @@
 <p><strong>Arguments:</strong>
 * <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-94-1" name="__codelineno-94-1" href="#__codelineno-94-1"></a>/violations Smooth
+<div class="highlight"><pre><span></span><code><a id="__codelineno-95-1" name="__codelineno-95-1" href="#__codelineno-95-1"></a>/violations Smooth
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2108,7 +2123,7 @@
 <p><strong>Arguments:</strong>
 * None</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-95-1" name="__codelineno-95-1" href="#__codelineno-95-1"></a>/acstatus
+<div class="highlight"><pre><span></span><code><a id="__codelineno-96-1" name="__codelineno-96-1" href="#__codelineno-96-1"></a>/acstatus
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2119,7 +2134,7 @@
 <p><strong>Arguments:</strong>
 * <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-96-1" name="__codelineno-96-1" href="#__codelineno-96-1"></a>/clearviol Smooth
+<div class="highlight"><pre><span></span><code><a id="__codelineno-97-1" name="__codelineno-97-1" href="#__codelineno-97-1"></a>/clearviol Smooth
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2130,7 +2145,7 @@
 <p><strong>Arguments:</strong>
 * None</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-97-1" name="__codelineno-97-1" href="#__codelineno-97-1"></a>/clearviolall
+<div class="highlight"><pre><span></span><code><a id="__codelineno-98-1" name="__codelineno-98-1" href="#__codelineno-98-1"></a>/clearviolall
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2142,8 +2157,8 @@
 * <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
 * <code>[on|off]</code> <strong>[Optional]</strong> &mdash; State toggle ('on' or 'off').</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-98-1" name="__codelineno-98-1" href="#__codelineno-98-1"></a>/watch Smooth on
-<a id="__codelineno-98-2" name="__codelineno-98-2" href="#__codelineno-98-2"></a>/watch Smooth off
+<div class="highlight"><pre><span></span><code><a id="__codelineno-99-1" name="__codelineno-99-1" href="#__codelineno-99-1"></a>/watch Smooth on
+<a id="__codelineno-99-2" name="__codelineno-99-2" href="#__codelineno-99-2"></a>/watch Smooth off
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2155,7 +2170,7 @@
 * <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).
 * <code>[on|off]</code> <strong>[Optional]</strong> &mdash; State toggle ('on' or 'off').</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-99-1" name="__codelineno-99-1" href="#__codelineno-99-1"></a>/acexempt TrustedAdmin on
+<div class="highlight"><pre><span></span><code><a id="__codelineno-100-1" name="__codelineno-100-1" href="#__codelineno-100-1"></a>/acexempt TrustedAdmin on
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2166,7 +2181,7 @@
 <p><strong>Arguments:</strong>
 * <code>&lt;player&gt;</code> <strong>[Required]</strong> &mdash; Target player name or Steam ID (e.g. Smooth, 76561198000000000).</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-100-1" name="__codelineno-100-1" href="#__codelineno-100-1"></a>/forcecheck Smooth
+<div class="highlight"><pre><span></span><code><a id="__codelineno-101-1" name="__codelineno-101-1" href="#__codelineno-101-1"></a>/forcecheck Smooth
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2179,7 +2194,7 @@
 * <code>[type]</code> <strong>[Optional]</strong> &mdash; Parameter: type
 * <code>[detail]</code> <strong>[Optional]</strong> &mdash; Parameter: detail</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-101-1" name="__codelineno-101-1" href="#__codelineno-101-1"></a>/testviolation Smooth SPEED_HACK "1500cm/s jump"
+<div class="highlight"><pre><span></span><code><a id="__codelineno-102-1" name="__codelineno-102-1" href="#__codelineno-102-1"></a>/testviolation Smooth SPEED_HACK "1500cm/s jump"
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2191,7 +2206,7 @@
 <p><strong>Arguments:</strong>
 * <code>&lt;player|uid&gt;</code> <strong>[Required]</strong> &mdash; Parameter: player|uid</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-102-1" name="__codelineno-102-1" href="#__codelineno-102-1"></a>/playerinfo Smooth
+<div class="highlight"><pre><span></span><code><a id="__codelineno-103-1" name="__codelineno-103-1" href="#__codelineno-103-1"></a>/playerinfo Smooth
 </code></pre></div></p>
 </details>
 <h2 id="announcements-ui">Announcements &amp; UI</h2>
@@ -2203,7 +2218,7 @@
 <p><strong>Arguments:</strong>
 * <code>&lt;message&gt;</code> <strong>[Required]</strong> &mdash; Message string to broadcast or send to player.</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-103-1" name="__codelineno-103-1" href="#__codelineno-103-1"></a>/broadcast "Server will restart in 15 minutes."
+<div class="highlight"><pre><span></span><code><a id="__codelineno-104-1" name="__codelineno-104-1" href="#__codelineno-104-1"></a>/broadcast "Server will restart in 15 minutes."
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2215,7 +2230,7 @@
 * <code>&lt;player|*&gt;</code> <strong>[Required]</strong> &mdash; Parameter: player|<em>
 * <code>&lt;message&gt;</code> </em><em>[Required]</em>* &mdash; Message string to broadcast or send to player.</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-104-1" name="__codelineno-104-1" href="#__codelineno-104-1"></a>/alert Smooth "Please move your base off the pathway"
+<div class="highlight"><pre><span></span><code><a id="__codelineno-105-1" name="__codelineno-105-1" href="#__codelineno-105-1"></a>/alert Smooth "Please move your base off the pathway"
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2226,7 +2241,7 @@
 <p><strong>Arguments:</strong>
 * <code>&lt;message&gt;</code> <strong>[Required]</strong> &mdash; Message string to broadcast or send to player.</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-105-1" name="__codelineno-105-1" href="#__codelineno-105-1"></a>/alertall "Global server event started!"
+<div class="highlight"><pre><span></span><code><a id="__codelineno-106-1" name="__codelineno-106-1" href="#__codelineno-106-1"></a>/alertall "Global server event started!"
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2239,7 +2254,7 @@
 * <code>[player|all]</code> <strong>[Optional]</strong> &mdash; Parameter: player|all
 * <code>&lt;message&gt;</code> <strong>[Required]</strong> &mdash; Message string to broadcast or send to player.</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-106-1" name="__codelineno-106-1" href="#__codelineno-106-1"></a>/popup all "Welcome to the PalSupervisor Dedicated Server!"
+<div class="highlight"><pre><span></span><code><a id="__codelineno-107-1" name="__codelineno-107-1" href="#__codelineno-107-1"></a>/popup all "Welcome to the PalSupervisor Dedicated Server!"
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2250,7 +2265,7 @@
 <p><strong>Arguments:</strong>
 * <code>&lt;message&gt;</code> <strong>[Required]</strong> &mdash; Message string to broadcast or send to player.</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-107-1" name="__codelineno-107-1" href="#__codelineno-107-1"></a>/popupall &lt;message&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-108-1" name="__codelineno-108-1" href="#__codelineno-108-1"></a>/popupall &lt;message&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2261,7 +2276,7 @@
 <p><strong>Arguments:</strong>
 * <code>&lt;message&gt;</code> <strong>[Required]</strong> &mdash; Message string to broadcast or send to player.</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-108-1" name="__codelineno-108-1" href="#__codelineno-108-1"></a>/notice "Daily automated maintenance at 04:00 UTC."
+<div class="highlight"><pre><span></span><code><a id="__codelineno-109-1" name="__codelineno-109-1" href="#__codelineno-109-1"></a>/notice "Daily automated maintenance at 04:00 UTC."
 </code></pre></div></p>
 </details>
 <h2 id="general-info">General Info</h2>
@@ -2273,8 +2288,8 @@
 <p><strong>Arguments:</strong>
 * <code>[command]</code> <strong>[Optional]</strong> &mdash; Parameter: command</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-109-1" name="__codelineno-109-1" href="#__codelineno-109-1"></a>/help
-<a id="__codelineno-109-2" name="__codelineno-109-2" href="#__codelineno-109-2"></a>/help spawnp
+<div class="highlight"><pre><span></span><code><a id="__codelineno-110-1" name="__codelineno-110-1" href="#__codelineno-110-1"></a>/help
+<a id="__codelineno-110-2" name="__codelineno-110-2" href="#__codelineno-110-2"></a>/help spawnp
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2285,7 +2300,7 @@
 <p><strong>Arguments:</strong>
 * None</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-110-1" name="__codelineno-110-1" href="#__codelineno-110-1"></a>/players
+<div class="highlight"><pre><span></span><code><a id="__codelineno-111-1" name="__codelineno-111-1" href="#__codelineno-111-1"></a>/players
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2296,7 +2311,7 @@
 <p><strong>Arguments:</strong>
 * None</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-111-1" name="__codelineno-111-1" href="#__codelineno-111-1"></a>/admins
+<div class="highlight"><pre><span></span><code><a id="__codelineno-112-1" name="__codelineno-112-1" href="#__codelineno-112-1"></a>/admins
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2307,7 +2322,7 @@
 <p><strong>Arguments:</strong>
 * None</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-112-1" name="__codelineno-112-1" href="#__codelineno-112-1"></a>/uptime
+<div class="highlight"><pre><span></span><code><a id="__codelineno-113-1" name="__codelineno-113-1" href="#__codelineno-113-1"></a>/uptime
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2318,7 +2333,7 @@
 <p><strong>Arguments:</strong>
 * None</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-113-1" name="__codelineno-113-1" href="#__codelineno-113-1"></a>/debug
+<div class="highlight"><pre><span></span><code><a id="__codelineno-114-1" name="__codelineno-114-1" href="#__codelineno-114-1"></a>/debug
 </code></pre></div></p>
 </details>
 
