@@ -149,7 +149,29 @@
   color: #94a3b8;
 }
 
-/* ---- CTA row (homepage) ---- */
+/* ---- Drawer title band + repo-source strip: dark, not a solid crimson block ---- */
+.md-nav__title {
+  background-color: #060b14 !important;
+  color: #f8fafc !important;
+  border-bottom: 1px solid rgba(225, 29, 72, 0.35);
+}
+.md-nav__title .md-nav__button.md-logo img,
+.md-nav__title .md-nav__button.md-logo svg {
+  fill: #e11d48;
+}
+.md-nav__source {
+  background-color: #0a0f1a !important;
+}
+.md-nav__source .md-source {
+  color: #94a3b8;
+}
+.md-nav__source .md-source__repository {
+  color: #cbd5e1;
+}
+.md-nav__source .md-source__icon svg {
+  fill: #2dd4bf;
+}
+
 .ps-cta {
   display: flex;
   flex-wrap: wrap;
