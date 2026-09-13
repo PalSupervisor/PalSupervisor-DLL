@@ -1,3 +1,11 @@
+/* ---- Font: swap mkdocs-material default Roboto for Inter (app UI font) ---- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+:root {
+  --md-text-font: "Inter";
+  --md-code-font: "Roboto Mono";
+}
+
+/* ---- Brand palette: crimson + teal on near-black navy ---- */
 :root {
   --md-primary-fg-color: #e11d48;
   --md-primary-fg-color--light: #f43f5e;
@@ -12,6 +20,51 @@
   --md-code-bg-color: #0f1e30;
   --md-code-fg-color: #2dd4bf;
 }
+
+/* ---- Header: dark app-bar instead of a solid crimson band ---- */
+.md-header {
+  background-color: #060b14;
+  color: #e2e8f0;
+  border-bottom: 1px solid rgba(225, 29, 72, 0.35);
+  box-shadow: none;
+}
+.md-header__title {
+  font-weight: 600;
+}
+.md-tabs {
+  background-color: #060b14;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+/* ---- Sidebar: dark bg, active page gets a crimson left-border pill ---- */
+.md-sidebar--primary .md-sidebar__scrollwrap,
+.md-nav--primary {
+  background-color: #0a0f1a;
+}
+.md-nav__link {
+  border-left: 3px solid transparent;
+  padding-left: 0.6rem;
+  border-radius: 0 6px 6px 0;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+.md-nav__link:hover {
+  background-color: rgba(225, 29, 72, 0.08);
+}
+.md-nav__link--active,
+.md-nav__link[aria-current="page"] {
+  background-color: rgba(225, 29, 72, 0.12);
+  border-left-color: #e11d48;
+  color: #f8fafc !important;
+  font-weight: 600;
+}
+
+/* ---- Links ---- */
+.md-typeset a {
+  color: #2dd4bf;
+}
+.md-typeset a:hover {
+  color: #f43f5e;
+}
 .md-typeset details.info summary {
   color: #2dd4bf;
   font-weight: bold;
@@ -20,9 +73,86 @@
   color: #e11d48;
   font-weight: bold;
 }
-.md-typeset a {
-  color: #2dd4bf;
+
+/* ---- Buttons: pill-shaped, crimson primary / teal outline secondary ---- */
+.md-typeset .md-button {
+  border-radius: 999px;
+  border: 1px solid #e11d48;
+  background-color: #e11d48;
+  color: #fff !important;
+  padding: 0.55em 1.4em;
+  font-weight: 600;
+  transition: background-color 0.15s ease, transform 0.1s ease;
 }
-.md-typeset a:hover {
-  color: #f43f5e;
+.md-typeset .md-button:hover {
+  background-color: #f43f5e;
+  border-color: #f43f5e;
+  transform: translateY(-1px);
+}
+.md-typeset .md-button--secondary {
+  background-color: transparent;
+  border: 1px solid #2dd4bf;
+  color: #2dd4bf !important;
+}
+.md-typeset .md-button--secondary:hover {
+  background-color: rgba(45, 212, 191, 0.1);
+  border-color: #2dd4bf;
+  color: #2dd4bf !important;
+}
+
+/* ---- Stat pills (homepage) ---- */
+.ps-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.25rem 0 1.75rem;
+}
+.ps-stat {
+  background-color: #0f1e30;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 999px;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.8rem;
+  color: #cbd5e1;
+}
+.ps-stat strong {
+  color: #2dd4bf;
+  font-weight: 700;
+}
+
+/* ---- Feature card grid (homepage) ---- */
+.ps-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.ps-card {
+  background-color: #0f1e30;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.ps-card:hover {
+  border-color: rgba(225, 29, 72, 0.5);
+  box-shadow: 0 0 0 1px rgba(225, 29, 72, 0.2);
+}
+.ps-card h4 {
+  margin: 0 0 0.4rem;
+  font-size: 0.95rem;
+  color: #f8fafc;
+}
+.ps-card p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* ---- CTA row (homepage) ---- */
+.ps-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
 }
