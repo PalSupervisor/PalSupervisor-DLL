@@ -31,32 +31,36 @@
 .md-header__title {
   font-weight: 600;
 }
-.md-tabs {
-  background-color: #060b14;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+
+/* ---- Primary page-nav sidebar/drawer removed — pages live in the header tabs bar instead ---- */
+.md-sidebar--primary,
+.md-header__button[for="__drawer"],
+.md-overlay {
+  display: none !important;
 }
 
-/* ---- Sidebar: dark bg, active page gets a crimson left-border pill ---- */
-.md-sidebar--primary .md-sidebar__scrollwrap,
-.md-nav--primary {
-  background-color: #0a0f1a;
+/* ---- Tabs bar: force visible at every viewport width (theme hides it below ~1220px by default) ---- */
+.md-tabs {
+  display: block !important;
+  background-color: #060b14 !important;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
 }
-.md-nav__link {
-  border-left: 3px solid transparent;
-  padding-left: 0.6rem;
-  border-radius: 0 6px 6px 0;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+.md-tabs__link {
+  color: #94a3b8;
+  opacity: 1;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.3rem;
 }
-.md-nav__link:hover {
-  background-color: rgba(225, 29, 72, 0.08);
+.md-tabs__link:hover {
+  color: #f8fafc;
+  border-bottom-color: rgba(225, 29, 72, 0.5);
 }
-.md-nav__link--active,
-.md-nav__link[aria-current="page"] {
-  background-color: rgba(225, 29, 72, 0.12);
-  border-left-color: #e11d48;
-  color: #f8fafc !important;
-  font-weight: 600;
+.md-tabs__item--active .md-tabs__link {
+  color: #ffffff;
+  border-bottom-color: #e11d48;
 }
+
 
 /* ---- Links ---- */
 .md-typeset a {
@@ -147,29 +151,6 @@
   margin: 0;
   font-size: 0.85rem;
   color: #94a3b8;
-}
-
-/* ---- Drawer title band + repo-source strip: dark, not a solid crimson block ---- */
-.md-nav__title {
-  background-color: #060b14 !important;
-  color: #f8fafc !important;
-  border-bottom: 1px solid rgba(225, 29, 72, 0.35);
-}
-.md-nav__title .md-nav__button.md-logo img,
-.md-nav__title .md-nav__button.md-logo svg {
-  fill: #e11d48;
-}
-.md-nav__source {
-  background-color: #0a0f1a !important;
-}
-.md-nav__source .md-source {
-  color: #94a3b8;
-}
-.md-nav__source .md-source__repository {
-  color: #cbd5e1;
-}
-.md-nav__source .md-source__icon svg {
-  fill: #2dd4bf;
 }
 
 .ps-cta {
