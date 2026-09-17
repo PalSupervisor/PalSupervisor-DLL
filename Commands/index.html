@@ -853,8 +853,7 @@
 </ul>
 </div>
 <hr />
-<details class="note" id="guild-base-camp-management">
-<summary>Guild &amp; Base Camp Management</summary>
+<h2 id="guild-base-camp-management">Guild &amp; Base Camp Management</h2>
 <details class="info">
 <summary>/basechests</summary>
 <p><strong>Syntax:</strong> <code>/basechests &lt;base_id&gt;</code><br />
@@ -1064,9 +1063,20 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>/transfer_master [guild] &lt;player&gt;
 </code></pre></div></p>
 </details>
+<hr />
+<h2 id="autonomous-janitor-telemetry">Autonomous Janitor &amp; Telemetry</h2>
+<details class="info">
+<summary>/janitor</summary>
+<p><strong>Syntax:</strong> <code>/janitor [run|history|toggle]</code><br />
+<strong>Description:</strong> Autonomous background server maintenance: trigger manual sweep, view recent swept item audit history, or toggle background maintenance on/off.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
+<strong>Arguments:</strong> <code>[run [deathbags]|history [limit]|toggle]</code><br />
+<strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>/janitor run
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>/janitor history 50
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>/janitor toggle
+</code></pre></div></p>
 </details>
-<details class="note" id="autonomous-janitor-telemetry">
-<summary>Autonomous Janitor &amp; Telemetry</summary>
 <details class="info">
 <summary>/cleardeathbags</summary>
 <p><strong>Syntax:</strong> <code>/cleardeathbags [player|all] [radius]</code><br />
@@ -1074,7 +1084,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player|all] [radius]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>/cleardeathbags [player|all] [radius]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>/cleardeathbags [player|all] [radius]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1084,7 +1094,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[radius]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>/cleardrops [radius]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>/cleardrops [radius]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1094,7 +1104,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[radius] [all|unowned]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>/clearwildbuilds [radius] [all|unowned]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>/clearwildbuilds [radius] [all|unowned]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1103,7 +1113,7 @@
 <strong>Description:</strong> List all active player death drops/corpses around the world with coordinates and item counts.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>/deathbags
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>/deathbags
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1113,7 +1123,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[status|run|toggle]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>/janitor [status|run|toggle]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>/janitor [status|run|toggle]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1122,7 +1132,7 @@
 <strong>Description:</strong> Display counts of treasures, death bags, dropped items, wild builds, chests, and supplies.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>/mapsummary
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>/mapsummary
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1132,7 +1142,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>/recoverbag [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>/recoverbag [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1142,7 +1152,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>/tp2deathbag &lt;player&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>/tp2deathbag &lt;player&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1152,7 +1162,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[grade 1-5]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>/tp2treasure [grade 1-5]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>/tp2treasure [grade 1-5]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1162,12 +1172,31 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[capsule|meteor] [player | x y z]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>/triggersupply [capsule|meteor] [player | x y z]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>/triggersupply [capsule|meteor] [player | x y z]
 </code></pre></div></p>
 </details>
+<hr />
+<h2 id="server-moderation-access">Server Moderation &amp; Access</h2>
+<details class="info">
+<summary>/admin</summary>
+<p><strong>Syntax:</strong> <code>/admin &lt;password&gt;</code><br />
+<strong>Description:</strong> Authenticate as server administrator in-game using the configured admin password without needing the full /AdminPassword syntax.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>All Players</code><br />
+<strong>Arguments:</strong> <code>&lt;password&gt;</code><br />
+<strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>/admin 2588
+</code></pre></div></p>
 </details>
-<details class="note" id="server-moderation-access">
-<summary>Server Moderation &amp; Access</summary>
+<details class="info">
+<summary>/auth</summary>
+<p><strong>Syntax:</strong> <code>/auth &lt;password&gt;</code><br />
+<strong>Description:</strong> Alias for <code>/admin</code> to authenticate as server administrator.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>All Players</code><br />
+<strong>Arguments:</strong> <code>&lt;password&gt;</code><br />
+<strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>/auth 2588
+</code></pre></div></p>
+</details>
 <details class="info">
 <summary>/acexempt</summary>
 <p><strong>Syntax:</strong> <code>/acexempt &lt;player&gt; [on|off]</code><br />
@@ -1175,7 +1204,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt; [on|off]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>/acexempt &lt;player&gt; [on|off]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>/acexempt &lt;player&gt; [on|off]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1184,7 +1213,7 @@
 <strong>Description:</strong> Show anti-cheat module status and thresholds.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>/acstatus
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>/acstatus
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1194,7 +1223,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt; [reason]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>/ban &lt;player&gt; [reason]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>/ban &lt;player&gt; [reason]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1203,7 +1232,7 @@
 <strong>Description:</strong> Display list of all banned players.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>/banlist
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>/banlist
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1213,7 +1242,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>/clearviol &lt;player&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>/clearviol &lt;player&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1222,7 +1251,7 @@
 <strong>Description:</strong> Clear ALL violation records. Use with caution.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>/clearviolall
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>/clearviolall
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1232,7 +1261,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt; [seconds]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>/freeze &lt;player&gt; [seconds]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>/freeze &lt;player&gt; [seconds]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1242,7 +1271,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt; [reason]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>/kick &lt;player&gt; [reason]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>/kick &lt;player&gt; [reason]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1252,7 +1281,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[reason]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>/kickall [reason]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>/kickall [reason]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1262,7 +1291,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>/kill [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>/kill [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1272,7 +1301,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] [radius]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>/killboss [player] [radius]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>/killboss [player] [radius]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1282,7 +1311,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt; [seconds]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>/mute &lt;player&gt; [seconds]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>/mute &lt;player&gt; [seconds]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1292,7 +1321,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>/pardon [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>/pardon [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1302,7 +1331,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt; [type] [detail]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>/testviolation &lt;player&gt; [type] [detail]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>/testviolation &lt;player&gt; [type] [detail]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1312,7 +1341,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player/uid/ip&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>/unban &lt;player/uid/ip&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>/unban &lt;player/uid/ip&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1322,7 +1351,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>/unfreeze &lt;player&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>/unfreeze &lt;player&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1332,7 +1361,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>/unmute &lt;player&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>/unmute &lt;player&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1342,7 +1371,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>/violations &lt;player&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>/violations &lt;player&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1352,7 +1381,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt; &lt;message&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>/warn &lt;player&gt; &lt;message&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a>/warn &lt;player&gt; &lt;message&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1362,19 +1391,18 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;on|off|add|remove|list&gt; [player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>/whitelist &lt;on|off|add|remove|list&gt; [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>/whitelist &lt;on|off|add|remove|list&gt; [player]
 </code></pre></div></p>
 </details>
-</details>
-<details class="note" id="server-administration-world">
-<summary>Server Administration &amp; World</summary>
+<hr />
+<h2 id="server-administration-world">Server Administration &amp; World</h2>
 <details class="info">
 <summary>/admins</summary>
 <p><strong>Syntax:</strong> <code>/admins</code><br />
 <strong>Description:</strong> List online admins.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>/admins
+<div class="highlight"><pre><span></span><code><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>/admins
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1384,7 +1412,7 @@
 </em><em>Permissions:</em><em> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 </em><em>Arguments:</em><em> <code>&lt;player|*&gt; &lt;message&gt;</code><br />
 </em><em>Example:</em>*
-<div class="highlight"><pre><span></span><code><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a>/alert &lt;player|*&gt; &lt;message&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a>/alert &lt;player|*&gt; &lt;message&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1394,7 +1422,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;message&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>/alertall &lt;message&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a>/alertall &lt;message&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1404,7 +1432,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;message&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>/broadcast &lt;message&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a>/broadcast &lt;message&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1414,7 +1442,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player|all] &lt;message&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a>/dialog [player|all] &lt;message&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a>/dialog [player|all] &lt;message&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1424,7 +1452,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt; &lt;itemid&gt; [amount]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a>/givei &lt;player&gt; &lt;itemid&gt; [amount]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a>/givei &lt;player&gt; &lt;itemid&gt; [amount]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1434,7 +1462,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;NpcID&gt; [level]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a>/given [player] &lt;NpcID&gt; [level]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a>/given [player] &lt;NpcID&gt; [level]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1444,7 +1472,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;PalID&gt; [level] [rank]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a>/givep [player] &lt;PalID&gt; [level] [rank]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a>/givep [player] &lt;PalID&gt; [level] [rank]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1454,7 +1482,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>All Players</code><br />
 <strong>Arguments:</strong> <code>[command]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a>/help [command]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a>/help [command]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1464,7 +1492,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a>/info &lt;player&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a>/info &lt;player&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1474,7 +1502,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;message&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a>/notice &lt;message&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a>/notice &lt;message&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1484,7 +1512,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player|uid&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a>/playerinfo &lt;player|uid&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a>/playerinfo &lt;player|uid&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1493,7 +1521,7 @@
 <strong>Description:</strong> List all online players with status.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a>/players
+<div class="highlight"><pre><span></span><code><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a>/players
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1503,7 +1531,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player|all] &lt;message&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a>/popup [player|all] &lt;message&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a>/popup [player|all] &lt;message&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1513,7 +1541,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;message&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a>/popupall &lt;message&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a>/popupall &lt;message&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1522,7 +1550,7 @@
 <strong>Description:</strong> Hot-reload config.json without restarting.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a>/reloadcfg
+<div class="highlight"><pre><span></span><code><a id="__codelineno-69-1" name="__codelineno-69-1" href="#__codelineno-69-1"></a>/reloadcfg
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1531,7 +1559,7 @@
 <strong>Description:</strong> Force an immediate world save.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a>/save
+<div class="highlight"><pre><span></span><code><a id="__codelineno-70-1" name="__codelineno-70-1" href="#__codelineno-70-1"></a>/save
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1541,7 +1569,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt; &lt;true|false&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a>/setadmin &lt;player&gt; &lt;true|false&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-71-1" name="__codelineno-71-1" href="#__codelineno-71-1"></a>/setadmin &lt;player&gt; &lt;true|false&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1551,7 +1579,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;PalID&gt; [level]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-69-1" name="__codelineno-69-1" href="#__codelineno-69-1"></a>/spawnp [player] &lt;PalID&gt; [level]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-72-1" name="__codelineno-72-1" href="#__codelineno-72-1"></a>/spawnp [player] &lt;PalID&gt; [level]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1561,7 +1589,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;PalID&gt; &lt;level&gt; &lt;x&gt; &lt;y&gt; &lt;z&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-70-1" name="__codelineno-70-1" href="#__codelineno-70-1"></a>/spawnw &lt;PalID&gt; &lt;level&gt; &lt;x&gt; &lt;y&gt; &lt;z&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-73-1" name="__codelineno-73-1" href="#__codelineno-73-1"></a>/spawnw &lt;PalID&gt; &lt;level&gt; &lt;x&gt; &lt;y&gt; &lt;z&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1571,7 +1599,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;0-23&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-71-1" name="__codelineno-71-1" href="#__codelineno-71-1"></a>/time &lt;0-23&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-74-1" name="__codelineno-74-1" href="#__codelineno-74-1"></a>/time &lt;0-23&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1580,7 +1608,7 @@
 <strong>Description:</strong> Show server uptime, player count, and violation stats.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-72-1" name="__codelineno-72-1" href="#__codelineno-72-1"></a>/uptime
+<div class="highlight"><pre><span></span><code><a id="__codelineno-75-1" name="__codelineno-75-1" href="#__codelineno-75-1"></a>/uptime
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1590,7 +1618,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;hour 0-23&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-73-1" name="__codelineno-73-1" href="#__codelineno-73-1"></a>/worldtime &lt;hour 0-23&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-76-1" name="__codelineno-76-1" href="#__codelineno-76-1"></a>/worldtime &lt;hour 0-23&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1600,12 +1628,11 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;rate&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-74-1" name="__codelineno-74-1" href="#__codelineno-74-1"></a>/worldtimescale &lt;rate&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-77-1" name="__codelineno-77-1" href="#__codelineno-77-1"></a>/worldtimescale &lt;rate&gt;
 </code></pre></div></p>
 </details>
-</details>
-<details class="note" id="items-inventory">
-<summary>Items &amp; Inventory</summary>
+<hr />
+<h2 id="items-inventory">Items &amp; Inventory</h2>
 <details class="info">
 <summary>/adminweapon</summary>
 <p><strong>Syntax:</strong> <code>/adminweapon [on|off|give] [player]</code><br />
@@ -1613,7 +1640,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[on|off|give] [player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-75-1" name="__codelineno-75-1" href="#__codelineno-75-1"></a>/adminweapon [on|off|give] [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-78-1" name="__codelineno-78-1" href="#__codelineno-78-1"></a>/adminweapon [on|off|give] [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1623,7 +1650,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-76-1" name="__codelineno-76-1" href="#__codelineno-76-1"></a>/clearinv &lt;player&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-79-1" name="__codelineno-79-1" href="#__codelineno-79-1"></a>/clearinv &lt;player&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1633,7 +1660,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-77-1" name="__codelineno-77-1" href="#__codelineno-77-1"></a>/giveadminweapon [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-80-1" name="__codelineno-80-1" href="#__codelineno-80-1"></a>/giveadminweapon [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1643,7 +1670,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt; &lt;itemid&gt; [amount]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-78-1" name="__codelineno-78-1" href="#__codelineno-78-1"></a>/giveitem &lt;player&gt; &lt;itemid&gt; [amount]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-81-1" name="__codelineno-81-1" href="#__codelineno-81-1"></a>/giveitem &lt;player&gt; &lt;itemid&gt; [amount]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1653,7 +1680,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[on|off|give] [player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-79-1" name="__codelineno-79-1" href="#__codelineno-79-1"></a>/godweapon [on|off|give] [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-82-1" name="__codelineno-82-1" href="#__codelineno-82-1"></a>/godweapon [on|off|give] [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1663,7 +1690,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-80-1" name="__codelineno-80-1" href="#__codelineno-80-1"></a>/inspectinv &lt;player&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-83-1" name="__codelineno-83-1" href="#__codelineno-83-1"></a>/inspectinv &lt;player&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1673,7 +1700,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player|all] &lt;item_name_or_id&gt; [amount]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-81-1" name="__codelineno-81-1" href="#__codelineno-81-1"></a>/itemreward [player|all] &lt;item_name_or_id&gt; [amount]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-84-1" name="__codelineno-84-1" href="#__codelineno-84-1"></a>/itemreward [player|all] &lt;item_name_or_id&gt; [amount]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1683,7 +1710,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[on|off|give] [player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-82-1" name="__codelineno-82-1" href="#__codelineno-82-1"></a>/onehit [on|off|give] [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-85-1" name="__codelineno-85-1" href="#__codelineno-85-1"></a>/onehit [on|off|give] [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1693,7 +1720,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;item_id&gt; [amount]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-83-1" name="__codelineno-83-1" href="#__codelineno-83-1"></a>/removeitem [player] &lt;item_id&gt; [amount]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-86-1" name="__codelineno-86-1" href="#__codelineno-86-1"></a>/removeitem [player] &lt;item_id&gt; [amount]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1703,7 +1730,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-84-1" name="__codelineno-84-1" href="#__codelineno-84-1"></a>/repair &lt;player&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-87-1" name="__codelineno-87-1" href="#__codelineno-87-1"></a>/repair &lt;player&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1713,7 +1740,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player|all] &lt;item_name_or_id&gt; [amount]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-85-1" name="__codelineno-85-1" href="#__codelineno-85-1"></a>/rewarditem [player|all] &lt;item_name_or_id&gt; [amount]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-88-1" name="__codelineno-88-1" href="#__codelineno-88-1"></a>/rewarditem [player|all] &lt;item_name_or_id&gt; [amount]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1723,12 +1750,11 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;item_id&gt; [amount]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-86-1" name="__codelineno-86-1" href="#__codelineno-86-1"></a>/takeitem [player] &lt;item_id&gt; [amount]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-89-1" name="__codelineno-89-1" href="#__codelineno-89-1"></a>/takeitem [player] &lt;item_id&gt; [amount]
 </code></pre></div></p>
 </details>
-</details>
-<details class="note" id="pals-npcs">
-<summary>Pals &amp; NPCs</summary>
+<hr />
+<h2 id="pals-npcs">Pals &amp; NPCs</h2>
 <details class="info">
 <summary>/clearpaldex</summary>
 <p><strong>Syntax:</strong> <code>/clearpaldex [player]</code><br />
@@ -1736,7 +1762,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-87-1" name="__codelineno-87-1" href="#__codelineno-87-1"></a>/clearpaldex [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-90-1" name="__codelineno-90-1" href="#__codelineno-90-1"></a>/clearpaldex [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1746,7 +1772,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-88-1" name="__codelineno-88-1" href="#__codelineno-88-1"></a>/completepaldex [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-91-1" name="__codelineno-91-1" href="#__codelineno-91-1"></a>/completepaldex [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1756,7 +1782,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;NpcID&gt; [level]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-89-1" name="__codelineno-89-1" href="#__codelineno-89-1"></a>/givenpc [player] &lt;NpcID&gt; [level]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-92-1" name="__codelineno-92-1" href="#__codelineno-92-1"></a>/givenpc [player] &lt;NpcID&gt; [level]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1766,7 +1792,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;PalID&gt; [level] [rank]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-90-1" name="__codelineno-90-1" href="#__codelineno-90-1"></a>/givepal [player] &lt;PalID&gt; [level] [rank]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-93-1" name="__codelineno-93-1" href="#__codelineno-93-1"></a>/givepal [player] &lt;PalID&gt; [level] [rank]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1776,7 +1802,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-91-1" name="__codelineno-91-1" href="#__codelineno-91-1"></a>/inspectpals &lt;player&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-94-1" name="__codelineno-94-1" href="#__codelineno-94-1"></a>/inspectpals &lt;player&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1786,7 +1812,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-92-1" name="__codelineno-92-1" href="#__codelineno-92-1"></a>/palparty [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-95-1" name="__codelineno-95-1" href="#__codelineno-95-1"></a>/palparty [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1796,7 +1822,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player|all] &lt;pal_name_or_id&gt; [level] [rank]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-93-1" name="__codelineno-93-1" href="#__codelineno-93-1"></a>/palreward [player|all] &lt;pal_name_or_id&gt; [level] [rank]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-96-1" name="__codelineno-96-1" href="#__codelineno-96-1"></a>/palreward [player|all] &lt;pal_name_or_id&gt; [level] [rank]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1806,7 +1832,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;pal_id|slot_1-5&gt; [count]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-94-1" name="__codelineno-94-1" href="#__codelineno-94-1"></a>/removepal [player] &lt;pal_id|slot_1-5&gt; [count]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-97-1" name="__codelineno-97-1" href="#__codelineno-97-1"></a>/removepal [player] &lt;pal_id|slot_1-5&gt; [count]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1816,7 +1842,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-95-1" name="__codelineno-95-1" href="#__codelineno-95-1"></a>/resetpaldex [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-98-1" name="__codelineno-98-1" href="#__codelineno-98-1"></a>/resetpaldex [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1826,7 +1852,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-96-1" name="__codelineno-96-1" href="#__codelineno-96-1"></a>/revivepals &lt;player&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-99-1" name="__codelineno-99-1" href="#__codelineno-99-1"></a>/revivepals &lt;player&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1836,7 +1862,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player|all] &lt;pal_name_or_id&gt; [level] [rank]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-97-1" name="__codelineno-97-1" href="#__codelineno-97-1"></a>/rewardpal [player|all] &lt;pal_name_or_id&gt; [level] [rank]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-100-1" name="__codelineno-100-1" href="#__codelineno-100-1"></a>/rewardpal [player|all] &lt;pal_name_or_id&gt; [level] [rank]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1846,7 +1872,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;NpcID&gt; [level]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-98-1" name="__codelineno-98-1" href="#__codelineno-98-1"></a>/spawnnpc [player] &lt;NpcID&gt; [level]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-101-1" name="__codelineno-101-1" href="#__codelineno-101-1"></a>/spawnnpc [player] &lt;NpcID&gt; [level]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1856,7 +1882,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;NpcID&gt; [level]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-99-1" name="__codelineno-99-1" href="#__codelineno-99-1"></a>/spawnnpcp [player] &lt;NpcID&gt; [level]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-102-1" name="__codelineno-102-1" href="#__codelineno-102-1"></a>/spawnnpcp [player] &lt;NpcID&gt; [level]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1866,7 +1892,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;NpcID&gt; &lt;level&gt; &lt;x&gt; &lt;y&gt; &lt;z&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-100-1" name="__codelineno-100-1" href="#__codelineno-100-1"></a>/spawnnpcw &lt;NpcID&gt; &lt;level&gt; &lt;x&gt; &lt;y&gt; &lt;z&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-103-1" name="__codelineno-103-1" href="#__codelineno-103-1"></a>/spawnnpcw &lt;NpcID&gt; &lt;level&gt; &lt;x&gt; &lt;y&gt; &lt;z&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1876,7 +1902,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;PalID&gt; [level]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-101-1" name="__codelineno-101-1" href="#__codelineno-101-1"></a>/spawnpal [player] &lt;PalID&gt; [level]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-104-1" name="__codelineno-104-1" href="#__codelineno-104-1"></a>/spawnpal [player] &lt;PalID&gt; [level]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1886,7 +1912,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;pal_id|slot_1-5&gt; [count]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-102-1" name="__codelineno-102-1" href="#__codelineno-102-1"></a>/takepal [player] &lt;pal_id|slot_1-5&gt; [count]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-105-1" name="__codelineno-105-1" href="#__codelineno-105-1"></a>/takepal [player] &lt;pal_id|slot_1-5&gt; [count]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1896,12 +1922,48 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-103-1" name="__codelineno-103-1" href="#__codelineno-103-1"></a>/wipepals &lt;player&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-106-1" name="__codelineno-106-1" href="#__codelineno-106-1"></a>/wipepals &lt;player&gt;
 </code></pre></div></p>
 </details>
+<hr />
+<h2 id="player-stats-progression">Player Stats &amp; Progression</h2>
+<details class="info">
+<summary>/buff</summary>
+<p><strong>Syntax:</strong> <code>/buff &lt;action|buff_id&gt; [args...]</code><br />
+<strong>Description:</strong> Comprehensive player buff management: apply pre-configured buffs (e.g. <code>warrior_fury</code>, <code>iron_wall</code>, <code>speed_demon</code>, <code>lucky_hunter</code>, <code>awakened_god</code>), view active buffs, list available presets, or grant buffs to target players.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
+<strong>Arguments:</strong> <code>&lt;buff_id [duration]|give &lt;player&gt; &lt;buff_id&gt;|remove [player]|list|info &lt;buff_id&gt;&gt;</code><br />
+<strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-107-1" name="__codelineno-107-1" href="#__codelineno-107-1"></a>/buff lucky_hunter 600
+<a id="__codelineno-107-2" name="__codelineno-107-2" href="#__codelineno-107-2"></a>/buff give Smooth awakened_god
+<a id="__codelineno-107-3" name="__codelineno-107-3" href="#__codelineno-107-3"></a>/buff list
+<a id="__codelineno-107-4" name="__codelineno-107-4" href="#__codelineno-107-4"></a>/buff remove
+</code></pre></div></p>
 </details>
-<details class="note" id="player-stats-progression">
-<summary>Player Stats &amp; Progression</summary>
+<details class="info">
+<summary>/aura</summary>
+<p><strong>Syntax:</strong> <code>/aura &lt;aura_name|clear&gt;</code><br />
+<strong>Description:</strong> Apply purely cosmetic visual particle aura effects with ZERO gameplay damage ticks. Automatically applies to both player and active summoned Pal.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
+<strong>Arguments:</strong> <code>&lt;aura_name|clear&gt;</code> (Available: <code>lucky</code>, <code>awakening</code>, <code>world_tree</code>, <code>burn</code>, <code>freeze</code>, <code>electrical</code>, <code>poison</code>, <code>wetness</code>, <code>darkness</code>, <code>earth</code>, <code>leaf</code>, <code>pal_enhancement</code>, <code>life_steal</code>, <code>low_gravity</code>, <code>player_buff</code>, <code>attack_up</code>, <code>defense_up</code>, <code>power_up</code>, <code>dragon</code>)<br />
+<strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-108-1" name="__codelineno-108-1" href="#__codelineno-108-1"></a>/aura lucky
+<a id="__codelineno-108-2" name="__codelineno-108-2" href="#__codelineno-108-2"></a>/aura awakening
+<a id="__codelineno-108-3" name="__codelineno-108-3" href="#__codelineno-108-3"></a>/aura burn
+<a id="__codelineno-108-4" name="__codelineno-108-4" href="#__codelineno-108-4"></a>/aura clear
+</code></pre></div></p>
+</details>
+<details class="info">
+<summary>/onehit</summary>
+<p><strong>Syntax:</strong> <code>/onehit [player] [on|off]</code><br />
+<strong>Description:</strong> Toggle Admin One-Hit Kill bypass damage for yourself or a target player.<br />
+<strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
+<strong>Arguments:</strong> <code>[player] [on|off]</code><br />
+<strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-109-1" name="__codelineno-109-1" href="#__codelineno-109-1"></a>/onehit
+<a id="__codelineno-109-2" name="__codelineno-109-2" href="#__codelineno-109-2"></a>/onehit Smooth on
+</code></pre></div></p>
+</details>
 <details class="info">
 <summary>/clearstats</summary>
 <p><strong>Syntax:</strong> <code>/clearstats [player]</code><br />
@@ -1909,7 +1971,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-104-1" name="__codelineno-104-1" href="#__codelineno-104-1"></a>/clearstats [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-110-1" name="__codelineno-110-1" href="#__codelineno-110-1"></a>/clearstats [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1919,7 +1981,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-105-1" name="__codelineno-105-1" href="#__codelineno-105-1"></a>/clearwanted [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-111-1" name="__codelineno-111-1" href="#__codelineno-111-1"></a>/clearwanted [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1929,7 +1991,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt; &lt;amount&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-106-1" name="__codelineno-106-1" href="#__codelineno-106-1"></a>/giveexp &lt;player&gt; &lt;amount&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-112-1" name="__codelineno-112-1" href="#__codelineno-112-1"></a>/giveexp &lt;player&gt; &lt;amount&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1939,7 +2001,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt; &lt;amount&gt; [boss]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-107-1" name="__codelineno-107-1" href="#__codelineno-107-1"></a>/givetech &lt;player&gt; &lt;amount&gt; [boss]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-113-1" name="__codelineno-113-1" href="#__codelineno-113-1"></a>/givetech &lt;player&gt; &lt;amount&gt; [boss]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1949,7 +2011,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt; [on|off]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-108-1" name="__codelineno-108-1" href="#__codelineno-108-1"></a>/godmode &lt;player&gt; [on|off]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-114-1" name="__codelineno-114-1" href="#__codelineno-114-1"></a>/godmode &lt;player&gt; [on|off]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1959,7 +2021,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-109-1" name="__codelineno-109-1" href="#__codelineno-109-1"></a>/heal [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-115-1" name="__codelineno-115-1" href="#__codelineno-115-1"></a>/heal [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1969,7 +2031,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-110-1" name="__codelineno-110-1" href="#__codelineno-110-1"></a>/knock [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-116-1" name="__codelineno-116-1" href="#__codelineno-116-1"></a>/knock [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1979,7 +2041,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-111-1" name="__codelineno-111-1" href="#__codelineno-111-1"></a>/lockalltech [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-117-1" name="__codelineno-117-1" href="#__codelineno-117-1"></a>/lockalltech [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1989,7 +2051,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-112-1" name="__codelineno-112-1" href="#__codelineno-112-1"></a>/lockfasttravel [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-118-1" name="__codelineno-118-1" href="#__codelineno-118-1"></a>/lockfasttravel [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -1999,7 +2061,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-113-1" name="__codelineno-113-1" href="#__codelineno-113-1"></a>/maxrelics [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-119-1" name="__codelineno-119-1" href="#__codelineno-119-1"></a>/maxrelics [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2009,7 +2071,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;NewNickname&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-114-1" name="__codelineno-114-1" href="#__codelineno-114-1"></a>/rename [player] &lt;NewNickname&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-120-1" name="__codelineno-120-1" href="#__codelineno-120-1"></a>/rename [player] &lt;NewNickname&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2019,7 +2081,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-115-1" name="__codelineno-115-1" href="#__codelineno-115-1"></a>/resetalltech [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-121-1" name="__codelineno-121-1" href="#__codelineno-121-1"></a>/resetalltech [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2029,7 +2091,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-116-1" name="__codelineno-116-1" href="#__codelineno-116-1"></a>/resetlevel [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-122-1" name="__codelineno-122-1" href="#__codelineno-122-1"></a>/resetlevel [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2039,7 +2101,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-117-1" name="__codelineno-117-1" href="#__codelineno-117-1"></a>/resetstats [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-123-1" name="__codelineno-123-1" href="#__codelineno-123-1"></a>/resetstats [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2049,7 +2111,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-118-1" name="__codelineno-118-1" href="#__codelineno-118-1"></a>/resetstats [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-124-1" name="__codelineno-124-1" href="#__codelineno-124-1"></a>/resetstats [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2059,7 +2121,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-119-1" name="__codelineno-119-1" href="#__codelineno-119-1"></a>/respawn [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-125-1" name="__codelineno-125-1" href="#__codelineno-125-1"></a>/respawn [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2069,7 +2131,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;boss_name|spawner_name|all&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-120-1" name="__codelineno-120-1" href="#__codelineno-120-1"></a>/respawnboss &lt;boss_name|spawner_name|all&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-126-1" name="__codelineno-126-1" href="#__codelineno-126-1"></a>/respawnboss &lt;boss_name|spawner_name|all&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2079,7 +2141,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-121-1" name="__codelineno-121-1" href="#__codelineno-121-1"></a>/respec [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-127-1" name="__codelineno-127-1" href="#__codelineno-127-1"></a>/respec [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2089,7 +2151,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt; &lt;amount&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-122-1" name="__codelineno-122-1" href="#__codelineno-122-1"></a>/sethp &lt;player&gt; &lt;amount&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-128-1" name="__codelineno-128-1" href="#__codelineno-128-1"></a>/sethp &lt;player&gt; &lt;amount&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2099,7 +2161,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;1-80|max&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-123-1" name="__codelineno-123-1" href="#__codelineno-123-1"></a>/setlevel [player] &lt;1-80|max&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-129-1" name="__codelineno-129-1" href="#__codelineno-129-1"></a>/setlevel [player] &lt;1-80|max&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2109,7 +2171,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;weight&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-124-1" name="__codelineno-124-1" href="#__codelineno-124-1"></a>/setmaxweight [player] &lt;weight&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-130-1" name="__codelineno-130-1" href="#__codelineno-130-1"></a>/setmaxweight [player] &lt;weight&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2119,7 +2181,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;amount&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-125-1" name="__codelineno-125-1" href="#__codelineno-125-1"></a>/setrelics [player] &lt;amount&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-131-1" name="__codelineno-131-1" href="#__codelineno-131-1"></a>/setrelics [player] &lt;amount&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2129,7 +2191,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt; &lt;amount&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-126-1" name="__codelineno-126-1" href="#__codelineno-126-1"></a>/setsp &lt;player&gt; &lt;amount&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-132-1" name="__codelineno-132-1" href="#__codelineno-132-1"></a>/setsp &lt;player&gt; &lt;amount&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2139,7 +2201,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt; &lt;amount&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-127-1" name="__codelineno-127-1" href="#__codelineno-127-1"></a>/setstamina &lt;player&gt; &lt;amount&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-133-1" name="__codelineno-133-1" href="#__codelineno-133-1"></a>/setstamina &lt;player&gt; &lt;amount&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2149,7 +2211,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] [1-5]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-128-1" name="__codelineno-128-1" href="#__codelineno-128-1"></a>/triggerwanted [player] [1-5]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-134-1" name="__codelineno-134-1" href="#__codelineno-134-1"></a>/triggerwanted [player] [1-5]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2159,7 +2221,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-129-1" name="__codelineno-129-1" href="#__codelineno-129-1"></a>/unlockalltech [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-135-1" name="__codelineno-135-1" href="#__codelineno-135-1"></a>/unlockalltech [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2169,7 +2231,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-130-1" name="__codelineno-130-1" href="#__codelineno-130-1"></a>/unlockfasttravel [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-136-1" name="__codelineno-136-1" href="#__codelineno-136-1"></a>/unlockfasttravel [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2179,12 +2241,11 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] [1-5]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-131-1" name="__codelineno-131-1" href="#__codelineno-131-1"></a>/wanted [player] [1-5]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-137-1" name="__codelineno-137-1" href="#__codelineno-137-1"></a>/wanted [player] [1-5]
 </code></pre></div></p>
 </details>
-</details>
-<details class="note" id="teleportation-navigation">
-<summary>Teleportation &amp; Navigation</summary>
+<hr />
+<h2 id="teleportation-navigation">Teleportation &amp; Navigation</h2>
 <details class="info">
 <summary>/forcecheck</summary>
 <p><strong>Syntax:</strong> <code>/forcecheck &lt;player&gt;</code><br />
@@ -2192,7 +2253,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-132-1" name="__codelineno-132-1" href="#__codelineno-132-1"></a>/forcecheck &lt;player&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-138-1" name="__codelineno-138-1" href="#__codelineno-138-1"></a>/forcecheck &lt;player&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2202,7 +2263,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player|uid&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-133-1" name="__codelineno-133-1" href="#__codelineno-133-1"></a>/inspectplayer &lt;player|uid&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-139-1" name="__codelineno-139-1" href="#__codelineno-139-1"></a>/inspectplayer &lt;player|uid&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2212,7 +2273,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-134-1" name="__codelineno-134-1" href="#__codelineno-134-1"></a>/pos &lt;player&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-140-1" name="__codelineno-140-1" href="#__codelineno-140-1"></a>/pos &lt;player&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2222,7 +2283,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-135-1" name="__codelineno-135-1" href="#__codelineno-135-1"></a>/spectate &lt;player&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-141-1" name="__codelineno-141-1" href="#__codelineno-141-1"></a>/spectate &lt;player&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2232,7 +2293,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt; &lt;x&gt; &lt;y&gt; &lt;z&gt;  or  &lt;player&gt; &lt;destplayer&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-136-1" name="__codelineno-136-1" href="#__codelineno-136-1"></a>/tp &lt;player&gt; &lt;x&gt; &lt;y&gt; &lt;z&gt;  or  &lt;player&gt; &lt;destplayer&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-142-1" name="__codelineno-142-1" href="#__codelineno-142-1"></a>/tp &lt;player&gt; &lt;x&gt; &lt;y&gt; &lt;z&gt;  or  &lt;player&gt; &lt;destplayer&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2242,7 +2303,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-137-1" name="__codelineno-137-1" href="#__codelineno-137-1"></a>/tp2me &lt;player&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-143-1" name="__codelineno-143-1" href="#__codelineno-143-1"></a>/tp2me &lt;player&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2252,7 +2313,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-138-1" name="__codelineno-138-1" href="#__codelineno-138-1"></a>/tpme &lt;player&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-144-1" name="__codelineno-144-1" href="#__codelineno-144-1"></a>/tpme &lt;player&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2262,19 +2323,18 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt; [on|off]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-139-1" name="__codelineno-139-1" href="#__codelineno-139-1"></a>/watch &lt;player&gt; [on|off]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-145-1" name="__codelineno-145-1" href="#__codelineno-145-1"></a>/watch &lt;player&gt; [on|off]
 </code></pre></div></p>
 </details>
-</details>
-<details class="note" id="bosses-encounters">
-<summary>Bosses &amp; Encounters</summary>
+<hr />
+<h2 id="bosses-encounters">Bosses &amp; Encounters</h2>
 <details class="info">
 <summary>/bosses</summary>
 <p><strong>Syntax:</strong> <code>/bosses</code><br />
 <strong>Description:</strong> Query world boss spawners, alive/dead state, and coordinates.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-140-1" name="__codelineno-140-1" href="#__codelineno-140-1"></a>/bosses
+<div class="highlight"><pre><span></span><code><a id="__codelineno-146-1" name="__codelineno-146-1" href="#__codelineno-146-1"></a>/bosses
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2284,7 +2344,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] [radius]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-141-1" name="__codelineno-141-1" href="#__codelineno-141-1"></a>/despawnboss [player] [radius]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-147-1" name="__codelineno-147-1" href="#__codelineno-147-1"></a>/despawnboss [player] [radius]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2294,7 +2354,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;template_name&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-142-1" name="__codelineno-142-1" href="#__codelineno-142-1"></a>/givecustom [player] &lt;template_name&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-148-1" name="__codelineno-148-1" href="#__codelineno-148-1"></a>/givecustom [player] &lt;template_name&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2303,7 +2363,7 @@
 <strong>Description:</strong> List all loaded Pal and Boss encounter templates.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-143-1" name="__codelineno-143-1" href="#__codelineno-143-1"></a>/listtemplates
+<div class="highlight"><pre><span></span><code><a id="__codelineno-149-1" name="__codelineno-149-1" href="#__codelineno-149-1"></a>/listtemplates
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2313,7 +2373,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-144-1" name="__codelineno-144-1" href="#__codelineno-144-1"></a>/raid [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-150-1" name="__codelineno-150-1" href="#__codelineno-150-1"></a>/raid [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2322,7 +2382,7 @@
 <strong>Description:</strong> Reload custom templates from PalSupervisor/Templates json files.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-145-1" name="__codelineno-145-1" href="#__codelineno-145-1"></a>/reloadtemplates
+<div class="highlight"><pre><span></span><code><a id="__codelineno-151-1" name="__codelineno-151-1" href="#__codelineno-151-1"></a>/reloadtemplates
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2332,7 +2392,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;template_name&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-146-1" name="__codelineno-146-1" href="#__codelineno-146-1"></a>/rewardcustom [player] &lt;template_name&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-152-1" name="__codelineno-152-1" href="#__codelineno-152-1"></a>/rewardcustom [player] &lt;template_name&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2342,7 +2402,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;template_name&gt; [distance]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-147-1" name="__codelineno-147-1" href="#__codelineno-147-1"></a>/spawnboss [player] &lt;template_name&gt; [distance]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-153-1" name="__codelineno-153-1" href="#__codelineno-153-1"></a>/spawnboss [player] &lt;template_name&gt; [distance]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2352,7 +2412,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;template_name&gt; [distance]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-148-1" name="__codelineno-148-1" href="#__codelineno-148-1"></a>/spawnbossp [player] &lt;template_name&gt; [distance]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-154-1" name="__codelineno-154-1" href="#__codelineno-154-1"></a>/spawnbossp [player] &lt;template_name&gt; [distance]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2362,7 +2422,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;template_name&gt; &lt;x&gt; &lt;y&gt; [z]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-149-1" name="__codelineno-149-1" href="#__codelineno-149-1"></a>/spawnbossw &lt;template_name&gt; &lt;x&gt; &lt;y&gt; [z]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-155-1" name="__codelineno-155-1" href="#__codelineno-155-1"></a>/spawnbossw &lt;template_name&gt; &lt;x&gt; &lt;y&gt; [z]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2372,7 +2432,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;template_name&gt; [distance]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-150-1" name="__codelineno-150-1" href="#__codelineno-150-1"></a>/spawncustom [player] &lt;template_name&gt; [distance]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-156-1" name="__codelineno-156-1" href="#__codelineno-156-1"></a>/spawncustom [player] &lt;template_name&gt; [distance]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2382,7 +2442,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player] &lt;template_name&gt; [distance]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-151-1" name="__codelineno-151-1" href="#__codelineno-151-1"></a>/spawncustomp [player] &lt;template_name&gt; [distance]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-157-1" name="__codelineno-157-1" href="#__codelineno-157-1"></a>/spawncustomp [player] &lt;template_name&gt; [distance]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2392,7 +2452,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;template_name&gt; &lt;x&gt; &lt;y&gt; [z]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-152-1" name="__codelineno-152-1" href="#__codelineno-152-1"></a>/spawncustomw &lt;template_name&gt; &lt;x&gt; &lt;y&gt; [z]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-158-1" name="__codelineno-158-1" href="#__codelineno-158-1"></a>/spawncustomw &lt;template_name&gt; &lt;x&gt; &lt;y&gt; [z]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2401,12 +2461,11 @@
 <strong>Description:</strong> Cancel all active enemy invasion raids.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-153-1" name="__codelineno-153-1" href="#__codelineno-153-1"></a>/stopraid
+<div class="highlight"><pre><span></span><code><a id="__codelineno-159-1" name="__codelineno-159-1" href="#__codelineno-159-1"></a>/stopraid
 </code></pre></div></p>
 </details>
-</details>
-<details class="note" id="economy-points-shop">
-<summary>Economy, Points &amp; Shop</summary>
+<hr />
+<h2 id="economy-points-shop">Economy, Points &amp; Shop</h2>
 <details class="info">
 <summary>/balance</summary>
 <p><strong>Syntax:</strong> <code>/balance [player]</code><br />
@@ -2414,7 +2473,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>All Players</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-154-1" name="__codelineno-154-1" href="#__codelineno-154-1"></a>/balance [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-160-1" name="__codelineno-160-1" href="#__codelineno-160-1"></a>/balance [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2424,7 +2483,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>All Players</code><br />
 <strong>Arguments:</strong> <code>&lt;item_id&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-155-1" name="__codelineno-155-1" href="#__codelineno-155-1"></a>/buy &lt;item_id&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-161-1" name="__codelineno-161-1" href="#__codelineno-161-1"></a>/buy &lt;item_id&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2434,7 +2493,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player|all] &lt;amount&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-156-1" name="__codelineno-156-1" href="#__codelineno-156-1"></a>/expreward [player|all] &lt;amount&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-162-1" name="__codelineno-162-1" href="#__codelineno-162-1"></a>/expreward [player|all] &lt;amount&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2443,7 +2502,7 @@
 <strong>Description:</strong> Alias for /roll.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>All Players</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-157-1" name="__codelineno-157-1" href="#__codelineno-157-1"></a>/gacha
+<div class="highlight"><pre><span></span><code><a id="__codelineno-163-1" name="__codelineno-163-1" href="#__codelineno-163-1"></a>/gacha
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2453,7 +2512,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt; &lt;amount&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-158-1" name="__codelineno-158-1" href="#__codelineno-158-1"></a>/givepoints &lt;player&gt; &lt;amount&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-164-1" name="__codelineno-164-1" href="#__codelineno-164-1"></a>/givepoints &lt;player&gt; &lt;amount&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2462,7 +2521,7 @@
 <strong>Description:</strong> Alias for /top.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>All Players</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-159-1" name="__codelineno-159-1" href="#__codelineno-159-1"></a>/leaderboard
+<div class="highlight"><pre><span></span><code><a id="__codelineno-165-1" name="__codelineno-165-1" href="#__codelineno-165-1"></a>/leaderboard
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2472,7 +2531,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>All Players</code><br />
 <strong>Arguments:</strong> <code>[player]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-160-1" name="__codelineno-160-1" href="#__codelineno-160-1"></a>/points [player]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-166-1" name="__codelineno-166-1" href="#__codelineno-166-1"></a>/points [player]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2481,7 +2540,7 @@
 <strong>Description:</strong> Hot-reload points_config.json, shop_config.json, and roll_config.json.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-161-1" name="__codelineno-161-1" href="#__codelineno-161-1"></a>/reloadpoints
+<div class="highlight"><pre><span></span><code><a id="__codelineno-167-1" name="__codelineno-167-1" href="#__codelineno-167-1"></a>/reloadpoints
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2490,7 +2549,7 @@
 <strong>Description:</strong> Alias for /reloadpoints.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-162-1" name="__codelineno-162-1" href="#__codelineno-162-1"></a>/reloadshop
+<div class="highlight"><pre><span></span><code><a id="__codelineno-168-1" name="__codelineno-168-1" href="#__codelineno-168-1"></a>/reloadshop
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2500,7 +2559,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player|all] &lt;amount&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-163-1" name="__codelineno-163-1" href="#__codelineno-163-1"></a>/rewardexp [player|all] &lt;amount&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-169-1" name="__codelineno-169-1" href="#__codelineno-169-1"></a>/rewardexp [player|all] &lt;amount&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2510,7 +2569,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player|all] &lt;item_name_or_id&gt; [amount]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-164-1" name="__codelineno-164-1" href="#__codelineno-164-1"></a>/rewardi [player|all] &lt;item_name_or_id&gt; [amount]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-170-1" name="__codelineno-170-1" href="#__codelineno-170-1"></a>/rewardi [player|all] &lt;item_name_or_id&gt; [amount]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2520,7 +2579,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>[player|all] &lt;pal_name_or_id&gt; [level] [rank]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-165-1" name="__codelineno-165-1" href="#__codelineno-165-1"></a>/rewardp [player|all] &lt;pal_name_or_id&gt; [level] [rank]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-171-1" name="__codelineno-171-1" href="#__codelineno-171-1"></a>/rewardp [player|all] &lt;pal_name_or_id&gt; [level] [rank]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2529,7 +2588,7 @@
 <strong>Description:</strong> Spin the Lucky Roll for randomized rewards and jackpots.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>All Players</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-166-1" name="__codelineno-166-1" href="#__codelineno-166-1"></a>/roll
+<div class="highlight"><pre><span></span><code><a id="__codelineno-172-1" name="__codelineno-172-1" href="#__codelineno-172-1"></a>/roll
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2539,7 +2598,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>All Players</code><br />
 <strong>Arguments:</strong> <code>[category|all]</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-167-1" name="__codelineno-167-1" href="#__codelineno-167-1"></a>/shop [category|all]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-173-1" name="__codelineno-173-1" href="#__codelineno-173-1"></a>/shop [category|all]
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2549,7 +2608,7 @@
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Arguments:</strong> <code>&lt;player&gt; &lt;amount&gt;</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-168-1" name="__codelineno-168-1" href="#__codelineno-168-1"></a>/takepoints &lt;player&gt; &lt;amount&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-174-1" name="__codelineno-174-1" href="#__codelineno-174-1"></a>/takepoints &lt;player&gt; &lt;amount&gt;
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2558,19 +2617,18 @@
 <strong>Description:</strong> View the top points leaderboard.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>All Players</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-169-1" name="__codelineno-169-1" href="#__codelineno-169-1"></a>/top
+<div class="highlight"><pre><span></span><code><a id="__codelineno-175-1" name="__codelineno-175-1" href="#__codelineno-175-1"></a>/top
 </code></pre></div></p>
 </details>
-</details>
-<details class="note" id="diagnostics-debug">
-<summary>Diagnostics &amp; Debug</summary>
+<hr />
+<h2 id="diagnostics-debug">Diagnostics &amp; Debug</h2>
 <details class="info">
 <summary>/debug</summary>
 <p><strong>Syntax:</strong> <code>/debug</code><br />
 <strong>Description:</strong> Dump full system status: registry, GObjects, GWorld, character, admin flag.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-170-1" name="__codelineno-170-1" href="#__codelineno-170-1"></a>/debug
+<div class="highlight"><pre><span></span><code><a id="__codelineno-176-1" name="__codelineno-176-1" href="#__codelineno-176-1"></a>/debug
 </code></pre></div></p>
 </details>
 <details class="info">
@@ -2579,11 +2637,10 @@
 <strong>Description:</strong> Dump Technology, Recipe, Wild Spawner, and Boss Spawner tables to JSON.<br />
 <strong>Permissions:</strong> <code>In-Game Chat</code>, <code>REST API</code>, <code>Admin Only</code><br />
 <strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-171-1" name="__codelineno-171-1" href="#__codelineno-171-1"></a>/dumptables
+<div class="highlight"><pre><span></span><code><a id="__codelineno-177-1" name="__codelineno-177-1" href="#__codelineno-177-1"></a>/dumptables
 </code></pre></div></p>
 </details>
-</details>
-
+<hr />
 
 
 

@@ -513,10 +513,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-real-time-spatial-live-map-entity-radar" class="md-nav__link">
+  <a href="#3-unified-player-buffs-visual-auras-engine" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Real-Time Spatial Live Map &amp; Entity Radar 🗺️
+        3. Unified Player Buffs &amp; Visual Auras Engine ✨
       
     </span>
   </a>
@@ -524,10 +524,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-proactive-anti-cheat-matrix" class="md-nav__link">
+  <a href="#4-real-time-spatial-live-map-entity-radar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Proactive Anti-Cheat Matrix 🛡️
+        4. Real-Time Spatial Live Map &amp; Entity Radar 🗺️
       
     </span>
   </a>
@@ -535,10 +535,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-dynamic-boss-encounter-engine" class="md-nav__link">
+  <a href="#5-proactive-anti-cheat-matrix" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Dynamic Boss &amp; Encounter Engine 👑
+        5. Proactive Anti-Cheat Matrix 🛡️
       
     </span>
   </a>
@@ -546,10 +546,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-native-embedded-rest-api" class="md-nav__link">
+  <a href="#6-dynamic-boss-encounter-engine" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Native Embedded REST API 🌐
+        6. Dynamic Boss &amp; Encounter Engine 👑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-pal-progression-base-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Pal Progression &amp; Base Protection 🏰
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-native-embedded-rest-api-on-port-27020" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Native Embedded REST API on Port 27020 🌐
       
     </span>
   </a>
@@ -667,10 +689,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-real-time-spatial-live-map-entity-radar" class="md-nav__link">
+  <a href="#3-unified-player-buffs-visual-auras-engine" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Real-Time Spatial Live Map &amp; Entity Radar 🗺️
+        3. Unified Player Buffs &amp; Visual Auras Engine ✨
       
     </span>
   </a>
@@ -678,10 +700,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-proactive-anti-cheat-matrix" class="md-nav__link">
+  <a href="#4-real-time-spatial-live-map-entity-radar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Proactive Anti-Cheat Matrix 🛡️
+        4. Real-Time Spatial Live Map &amp; Entity Radar 🗺️
       
     </span>
   </a>
@@ -689,10 +711,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-dynamic-boss-encounter-engine" class="md-nav__link">
+  <a href="#5-proactive-anti-cheat-matrix" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Dynamic Boss &amp; Encounter Engine 👑
+        5. Proactive Anti-Cheat Matrix 🛡️
       
     </span>
   </a>
@@ -700,10 +722,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-native-embedded-rest-api" class="md-nav__link">
+  <a href="#6-dynamic-boss-encounter-engine" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Native Embedded REST API 🌐
+        6. Dynamic Boss &amp; Encounter Engine 👑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-pal-progression-base-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Pal Progression &amp; Base Protection 🏰
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-native-embedded-rest-api-on-port-27020" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Native Embedded REST API on Port 27020 🌐
       
     </span>
   </a>
@@ -742,39 +786,76 @@
 <hr />
 <h2 id="2-autonomous-server-janitor-audit-trail">2. Autonomous Server Janitor &amp; Audit Trail 🧹</h2>
 <ul>
-<li><strong>Orphaned Wild Structure Demolition</strong>: Automatically detects and dismantles structures built outside official guild base camp circles, freeing up physics memory and actor limits.</li>
-<li><strong>Loose Ground Drop Purging</strong>: Sweeps abandoned ground item drops (<code>DropItem</code>) at scheduled intervals to prevent RAM bloat and physics clutter.</li>
-<li><strong>Deathbag Cleanup &amp; Age Retention</strong>: Purges player death corpse containers exceeding configurable age limits (<code>deathbag_max_age_minutes</code>), preventing deathbag hoarding from degrading server tick rates.</li>
+<li><strong>Scheduled Background Automation</strong>: Configured via <code>"janitor"</code> in <code>config.json</code> to continuously maintain world health and garbage collection.</li>
+<li><strong>Orphaned Wild Structure Demolition</strong>: Automatically detects and dismantles structures built outside official guild base camp circles (<code>wild_builds_interval_sec</code>), freeing up physics memory and actor limits.</li>
+<li><strong>Loose Ground Drop Purging</strong>: Sweeps abandoned ground item drops (<code>DropItem</code>) at scheduled intervals (<code>drops_interval_sec</code>, default 600s) to prevent RAM bloat and physics clutter.</li>
+<li><strong>Periodic World Auto-Save</strong>: Triggers native <code>StartWorldDataAutoSave</code> on configurable intervals (<code>auto_save_interval_sec</code>, default 300s) with zero player stutter.</li>
+<li><strong>Scheduled Rotating Announcements</strong>: Broadcasts server tips and alerts (<code>broadcast_interval_sec</code>, default 900s) directly to all player HUDs.</li>
 <li><strong>Live In-Memory Audit Trail</strong>: Records up to 500 recent swept items in an in-memory ring buffer accessible via <code>GET /api/janitor/swept</code> and in-game command <code>/janitor history</code>. Captures item category, item name, quantity, owner UID, owner player name, UE world coordinates, and in-game map coordinates.</li>
-<li><strong>Manual &amp; Automated Sweeps</strong>: Supports background timers as well as instant manual sweeps with customizable criteria and dry-run mode via <code>POST /api/janitor/run</code>.</li>
+<li><strong>Manual &amp; Automated Sweeps</strong>: Supports background timers as well as instant manual sweeps with customizable criteria via <code>POST /api/janitor/run</code> and <code>/janitor run</code>.</li>
 </ul>
 <hr />
-<h2 id="3-real-time-spatial-live-map-entity-radar">3. Real-Time Spatial Live Map &amp; Entity Radar 🗺️</h2>
+<h2 id="3-unified-player-buffs-visual-auras-engine">3. Unified Player Buffs &amp; Visual Auras Engine ✨</h2>
+<ul>
+<li><strong>Preset Multiplier Buffs</strong>: Configured via <code>PalSupervisor/config/buffs.json</code> with customizable stat multipliers:<ul>
+<li>Attack Multiplier (e.g. 1.5x)</li>
+<li>Defense Multiplier (e.g. 2.0x)</li>
+<li>Movement Speed Multiplier (e.g. 1.6x)</li>
+<li>Critical Hit Rate &amp; Critical Damage Multipliers</li>
+<li>EXP &amp; Loot Drop Rate Multipliers (e.g. 2.0x)</li>
+<li>Infinite Sprint Stamina &amp; Godmode Invulnerability toggles</li>
+</ul>
+</li>
+<li><strong>Pure Cosmetic Particle Auras (Zero Damage Ticks)</strong>:<ul>
+<li>Uses native Unreal Engine <code>UPalVisualEffectComponent</code> (<code>APalCharacter + 0x0678</code>) and <code>EPalVisualEffectID</code> without inflicting status ailment tick damage.</li>
+<li>19 Distinct Visual Particles: <code>lucky</code> (Rare Pal sparkles), <code>awakening</code> (Golden holy flame), <code>world_tree</code> (Sacred radiance), <code>burn</code> (cosmetic roaring flames), <code>freeze</code> (cosmetic ice frost), <code>electrical</code> (cosmetic lightning sparks), <code>poison</code> (cosmetic toxic mist), <code>wetness</code>, <code>darkness</code>, <code>earth</code>, <code>leaf</code>, <code>pal_enhancement</code>, <code>life_steal</code>, <code>low_gravity</code>, <code>player_buff</code>, <code>attack_up</code>, <code>defense_up</code>, <code>power_up</code>, <code>dragon</code>.</li>
+</ul>
+</li>
+<li><strong>Summoned Pal (Otomo) Dual Application</strong>:<ul>
+<li>Automatically detects if the player has an active summoned Pal out via <code>GetActiveOtomoActors</code>.</li>
+<li>Applies the visual effect directly to both the player and their active combat Pal simultaneously, with automatic player-compatible fallback radiance for Pal-exclusive Niagara effects.</li>
+</ul>
+</li>
+<li><strong>World Buff &amp; Permanent Assignments</strong>:<ul>
+<li>Schedule server-wide buffs for all players or lock permanent buffs to server administrators and VIPs.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="4-real-time-spatial-live-map-entity-radar">4. Real-Time Spatial Live Map &amp; Entity Radar 🗺️</h2>
 <ul>
 <li><strong>Full-World Entity Indexing</strong>: Continuously indexes live world entities including loose loot, player death corpse containers, wild dropped Pal spheres, world treasure chests, dungeon chests, wild Pal eggs, supply drop capsules/meteorites, and unowned player structures.</li>
-<li><strong>Calibrated Dual-Coordinate Projection</strong>: Projects raw 3D Unreal Engine centimeter vectors into standard Palworld in-game map coordinates ($X, Y$) matching the player HUD map ($X =     ext{WorldX} \times 0.002179 - 344$, $Y =    ext{WorldY} \times 0.002179 + 270$).</li>
+<li><strong>Calibrated Dual-Coordinate Projection</strong>: Projects raw 3D Unreal Engine centimeter vectors into standard Palworld in-game map coordinates ($X, Y$) matching the player HUD map ($X = \text{WorldX} \times 0.002179 - 344$, $Y = \text{WorldY} \times 0.002179 + 270$).</li>
 <li><strong>One-Click Deathbag Recovery</strong>: Direct item restoration from deathbags into player inventories via <code>POST /api/map/recoverbag</code> or in-game command <code>/recoverbag</code>.</li>
 </ul>
 <hr />
-<h2 id="4-proactive-anti-cheat-matrix">4. Proactive Anti-Cheat Matrix 🛡️</h2>
+<h2 id="5-proactive-anti-cheat-matrix">5. Proactive Anti-Cheat Matrix 🛡️</h2>
 <ul>
 <li><strong>Movement &amp; Delta-Position Validation</strong>: Calculates delta position over delta time to detect speed hacking, fly hacking, and illegal coordinate teleportation.</li>
 <li><strong>Stamina &amp; Stat Sanitization</strong>: Detects and clamps impossible stamina values, health spikes, and unearned stat points.</li>
 <li><strong>Illegal Item &amp; Pal Detection</strong>: Filters out unobtainable or blacklisted item IDs and illegal Pal passives.</li>
+<li><strong>Chat Security &amp; Admin Protection</strong>: Intercepts accidental leaks of administrator passwords in chat, while preserving legitimate <code>/admin</code> and <code>/AdminPassword</code> authentication commands.</li>
 <li><strong>Evidence Logging &amp; Webhooks</strong>: Maintains an active violation score per player, triggers auto-bans when thresholds are breached, and dispatches rich embed alerts to Discord webhooks.</li>
 </ul>
 <hr />
-<h2 id="5-dynamic-boss-encounter-engine">5. Dynamic Boss &amp; Encounter Engine 👑</h2>
+<h2 id="6-dynamic-boss-encounter-engine">6. Dynamic Boss &amp; Encounter Engine 👑</h2>
 <ul>
 <li><strong>Template-Driven Boss Spawns</strong>: Define custom multi-tier boss encounters in <code>PalSupervisor/Templates/*.json</code> with custom hitpoints, minions, level scaling, and drop tables.</li>
 <li><strong>Invasion Raid Management</strong>: Trigger, monitor, or immediately cancel base camp raid events with <code>/raid</code> and <code>/stopraid</code>.</li>
 <li><strong>Supply Drops &amp; Meteorites</strong>: Trigger on-demand supply capsules or meteorite strikes at specific coordinates or target players.</li>
 </ul>
 <hr />
-<h2 id="6-native-embedded-rest-api">6. Native Embedded REST API 🌐</h2>
+<h2 id="7-pal-progression-base-protection">7. Pal Progression &amp; Base Protection 🏰</h2>
+<ul>
+<li><strong>Pal Condenser Rank 5</strong>: Unlocks maximum tier condensation enhancement for companion Pals.</li>
+<li><strong>Breeding Farm Protection</strong>: Safeguards breeding farm containers and eggs against foreign player intrusion or accidental janitor sweeps.</li>
+<li><strong>Clean Base Wipe (<code>/basewipe</code>)</strong>: Erases orphaned or toxic player base camps with zero item spill.</li>
+</ul>
+<hr />
+<h2 id="8-native-embedded-rest-api-on-port-27020">8. Native Embedded REST API on Port 27020 🌐</h2>
 <ul>
 <li><strong>High-Speed HTTP Daemon</strong>: Lightweight, multi-threaded C++ REST API listening on port <code>27020</code> (<code>http://127.0.0.1:27020</code>).</li>
-<li><strong>Complete Administrative Suite</strong>: Over 120 endpoints providing full server control, player moderation, inventory grants, cheat toggles, and live radar feeds for dashboard managers and Discord bots.</li>
+<li><strong>Over 240+ Administrative Endpoints</strong>: Complete server telemetry, player moderation, buff management, janitor controls, cheat toggles, and live radar feeds for web panels and Discord bots.</li>
 </ul>
 
 
