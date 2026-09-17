@@ -1,0 +1,50 @@
+site_name: PalSupervisor Wiki
+site_description: Enterprise Native Supervisor & Anti-Cheat for Palworld Dedicated Servers
+site_author: PalSupervisor
+site_url: https://palsupervisor.github.io/PalSupervisor-DLL/
+repo_url: https://github.com/PalSupervisor/PalSupervisor-DLL
+repo_name: PalSupervisor/PalSupervisor-DLL
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - tables
+  - attr_list
+
+nav:
+  - Home: index.md
+  - Commands: Commands.md
+  - Features: Features.md
+  - Installation: Installation.md
+  - REST API: RESTAPI.md
